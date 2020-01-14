@@ -40,18 +40,24 @@ ref3@illinois.edu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-The electric grid is important to decarbonize in order to reach out carbon goals and halt climate change
-(mention Icap see \cite{holcomb_fueling_2015}).
-Unfortunately, as we have seen with France that alone will not be enough. Around 40\% (find reference and more accurate numbers) of France's CO$_2$ is from transportation.
-Micro-reactors present a solution to this problem by producing clean H$_2$ and heat for use in other industrial processes.
+The Illinois Climate Action Plan (iCAP) focuses on making UIUC campus more sustainable. One of the objectives listed in the iCAP is the reduction of carbon emissions. As Figure \ref{fig:ghg} displays, transportation was the economic sector that produced the largest amount of greenhouse emissions in the US in 2017. It is important to decarbonize transportation on UIUC campus in order to reach the iCAP goal and halt climate change \cite{noauthor_illlinois_2015}.
 
-UIUC campus fleet service vehicles
-Champaign-Urbana Mass Transit District (MTD) bus system
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\linewidth]{figures/total-ghg-2019-caption.jpg}
+	\hfill
+	\caption{Total U.S. Greenhouse Gas Emissions by Economic Sector in 2017 \cite{us_epa_sources_2020}.}
+	\label{fig:ghg}
+\end{figure}
 
+One possible solution to reduce carbon emissions, and even achieve a net zero carbon production, is to develop hydrogen economies as California is currently doing \cite{brown_economic_2013}. This article presents a few hydrogen production methods. As Section \ref{hydroprod} will describe in the following, some of the methods presented here help reduce carbon emissions but do not eliminate the production of CO$_2$. Nuclear reactors introduce a solution to this problem by producing clean H$_2$ and heat for use in other industrial processes.
 
-Next section lists a few technologies to produce hydrogen.
+Micro-Reactors are an innovative technology that is very attractive for hydrogen production. This type of reactors has three main features: Factory fabricated, transportable, and self-regulating. All the components fully assembled in a factory and shipped out to location will reduce capital costs and allow to deploy the reactor quickly. Simple design concepts will eliminate the need of a large number of specialized operators. They will utilize passive safey systems that prevent overheating or meltdown \cite{noauthor_ultimate_2019}.
 
-\section{Hydrogen Production Technologies}
+Section \ref{method} explains the method used to calculate the amount of hydrogen required to fuel UIUC campus fleet service vehicles and Champaign-Urbana Mass Transit District (MTD) bus system.
+
+\section{Hydrogen Production Methods}
+\label{hydroprod}
 
 Some hydrogen production processes are: 
 \begin{description}[font=$\bullet$\scshape\bfseries]
@@ -66,7 +72,7 @@ The two most common methods for producing hydrogen are steam reforming and elect
 Steam reforming is currently the least expensive way to produce hydrogen. This method separates hydrogen atoms from carbon atoms in methane (CH4). This process results in carbon dioxide emissions.
 Electrolysis splits hydrogen from water using an electric current. The emissions are hydrogen and oxygen \cite{noauthor_production_2019}. 
 
-\section{Steam Reforming}
+\subsection{Steam Reforming}
 
 Steam reforming is a mature production process that uses high-temperature steam (700$^{\circ}$C-1000$^{\circ}$C) to produce hydrogen from a methane source. Methane reacts with steam under 3-25 bar pressure in the presence of a catalyst to produce hydrogen, carbon monoxide, and a small portion of carbon dioxide. The reaction is endothermic and requires the supply of heat to occure \cite{noauthor_hydrogen_nodate}.
 \begin{equation}
@@ -83,7 +89,7 @@ Even with the upstream process of producing hydrogen from natural gas as well as
 
 Electrolysis is the process of using electricity to split water into hydrogen and oxygen, Fig. \ref{fig:electro}. The reaction takes place in a unit called electrolyzer. Electrolyzers consist of an anode and a cathode separated by an electrolyte. Different electrolyzers function in slightly different ways. A few types are polymer electrolyte membrane, alkaline, and solid oxide electrolyzers.
 
-\begin{figure}[H]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=0.4\linewidth]{figures/electrolysis.png}
 	\hfill
@@ -93,12 +99,39 @@ Electrolysis is the process of using electricity to split water into hydrogen an
 
 Solid oxide electrolyzers must operate at thermperatures high enough for the solid oxide membranes to function properly (about 700$^{\circ}$-800$^{\circ}$C). The use of heat at these elevated temperatures decreases the amount of electrical energy needed to produce hydrogen from water.
 
-
 \section{Methodology}
-A gasoline gallon equivalent (gge) is the amount of fuel that has the same amount of energy as a gallon of gasoline. One kilogram of hydrogen is equivalent to one gallon of gasoline \cite{noauthor_hydrogen_nodate}.
+\label{method}
+
+A gasoline gallon equivalent (gge) is the amount of fuel that has the same amount of energy as a gallon of gasoline. One kilogram of hydrogen is equivalent to one gallon of gasoline \cite{noauthor_hydrogen_nodate}. Burning a gallon of gasoline produces 19.64 lbs of CO$_2$ \cite{noauthor_how_2014}. 
 Similarly, a diesel gallon equivalent (dge) has the same amount of energy as a gallon of diesel. Approximately, a dge is 113\% of a gge \cite{noauthor_fuel_2014}, then 1.13 Kg of hydrogen is equivalent to one gallon of diesel.
+A gallon of diesel produces 22.38 lbs of CO$_2$ \cite{noauthor_how_2014}. 
+Table \ref{tab:meth} summarizes this information.
+
+\begin{table}[]
+	\centering
+    \caption{GGE, DGE, and CO$_2$ produced.}
+    \label{tab:meth}
+	\begin{tabular}{l|l|l|l}
+	\hline
+	                                 & Hydrogen & Gasoline    & Diesel      \\ \hline
+	Gasoline Gallon Equivalent (GGE) & 1 Kg     & 1 Gallon    & 0.88 Gallon \\
+	Diesel Gallon Equivalent (DGE)   & 1.13 Kg  & 1.13 Gallon & 1 Gallon    \\
+    CO$_2$ produced                  & -        & 19.64 lbs   & 22.38 lbs   \\ \hline
+
+	\end{tabular}
+\end{table}
 
 \section{Results}
+
+Figure \ref{fig:mtdfuel} shows the amount of diesel purchased every day by MTD in a year. The calculations take into account the assumption that MTD consumed the purchased fuel on the same day.
+
+\begin{figure}[]
+	\centering
+	\includegraphics[width=0.4\linewidth]{figures/fuelconsumption.png}
+	\hfill
+	\caption{Quantity of gallons of diesel consumed each day by MTD from July 1st 2018 to June 30th 2019.}
+	\label{fig:mtdfuel}
+\end{figure}
 
 \section{Conclusion}
 
