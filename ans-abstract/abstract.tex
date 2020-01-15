@@ -44,7 +44,7 @@ The Illinois Climate Action Plan (iCAP) focuses on making UIUC campus more susta
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.4\linewidth]{figures/total-ghg-2019-caption.jpg}
+	\includegraphics[width=0.5\linewidth]{figures/total-ghg-2019-caption.jpg}
 	\hfill
 	\caption{Total U.S. Greenhouse Gas Emissions by Economic Sector in 2017 \cite{us_epa_sources_2020}.}
 	\label{fig:ghg}
@@ -61,68 +61,64 @@ Section \ref{method} explains the method used to calculate the amount of hydroge
 
 Some hydrogen production processes are: 
 \begin{description}[font=$\bullet$\scshape\bfseries]
-	\item[] Steam-Methane reforming (aka Natural Gas Reforming).
-	\item[] Coal Gasification with CCS (aka Carbon Sequestration).
-	\item[] High-Temperature Electrolysis.
+	\item[] Steam-Methane Reforming (aka Natural Gas Reforming).
 	\item[] Electrolysis.
-	\item[] .
+	\item[] High-Temperature Electrolysis.
+	\item[] Iodine-Sulfur Thermochemical Cycle.
+	\item[] Coal Gasification with CCS (aka Carbon Sequestration).
+	\item[] Solar Thermochemical Hydrogen Production.
 \end{description}
 
 The two most common methods for producing hydrogen are steam reforming and electrolysis.
-Steam reforming is currently the least expensive way to produce hydrogen. This method separates hydrogen atoms from carbon atoms in methane (CH4). This process results in carbon dioxide emissions.
-Electrolysis splits hydrogen from water using an electric current. The emissions are hydrogen and oxygen \cite{noauthor_production_2019}. 
 
 \subsection{Steam Reforming}
 
-Steam reforming is a mature production process that uses high-temperature steam (700$^{\circ}$C-1000$^{\circ}$C) to produce hydrogen from a methane source. Methane reacts with steam under 3-25 bar pressure in the presence of a catalyst to produce hydrogen, carbon monoxide, and a small portion of carbon dioxide. The reaction is endothermic and requires the supply of heat to occure \cite{noauthor_hydrogen_nodate}.
+Steam reforming is currently the least expensive way to produce hydrogen. This method separates hydrogen atoms from carbon atoms in methane (CH4). This process results in carbon dioxide emissions.
+Steam reforming is a mature production process that uses high-temperature steam (700$^{\circ}$C-1000$^{\circ}$C) to produce hydrogen from a methane source. Methane reacts with steam under 3-25 bar pressure in the presence of a catalyst to produce hydrogen, carbon monoxide, and a small portion of carbon dioxide. The reaction is endothermic and requires the supply of heat to occur \cite{noauthor_hydrogen_nodate}:
 \begin{equation}
 CH_4 + H_2O + heat \rightarrow CO + 3H_2
 \end{equation}
-A secondary reaction know as water-gas shift reaction occurs producing $CO_2$ and more hydrogen:
+A secondary reaction known as water-gas shift reaction occurs producing $CO_2$ and more hydrogen:
 \begin{equation}
 CO + H_2O \rightarrow CO_2 + H_2
 \end{equation}
 
-Even with the upstream process of producing hydrogen from natural gas as well as delivering and storing it for use in fuel cell electric vehicles, the process reduces the greenhouse emissions in half and the use of petroleum over 90\% in today's gasoline vehicles.
+Even with the upstream process of producing hydrogen from natural gas the process reduces the greenhouse emissions in half and the use of petroleum over a 90\% in today's gasoline vehicles \cite{noauthor_hydrogen_nodate}.
 
 \section{Electrolysis}
 
-Electrolysis is the process of using electricity to split water into hydrogen and oxygen, Fig. \ref{fig:electro}. The reaction takes place in a unit called electrolyzer. Electrolyzers consist of an anode and a cathode separated by an electrolyte. Different electrolyzers function in slightly different ways. A few types are polymer electrolyte membrane, alkaline, and solid oxide electrolyzers.
+Electrolysis is the process of using an electric current to split water into hydrogen and oxygen, Fig. \ref{fig:electro}. The reaction takes place in a unit called electrolyzer. Electrolyzers consist of an anode and a cathode separated by an electrolyte. Different electrolyzers function in slightly different ways. A few types are polymer electrolyte membrane, alkaline, and solid oxide electrolyzers.
 
 \begin{figure}[]
 	\centering
-	\includegraphics[width=0.4\linewidth]{figures/electrolysis.png}
+	\includegraphics[width=0.5\linewidth]{figures/electrolysis.png}
 	\hfill
 	\caption{Production of hydrogen by electrolysis.}
 	\label{fig:electro}
 \end{figure}
 
-Solid oxide electrolyzers must operate at thermperatures high enough for the solid oxide membranes to function properly (about 700$^{\circ}$-800$^{\circ}$C). The use of heat at these elevated temperatures decreases the amount of electrical energy needed to produce hydrogen from water.
+\subsection{High-Temperature Electrolysis (HTE)}
+
+Solid oxide electrolyzers must operate at thermperatures high enough for the solid oxide membranes to function properly (about 700$^{\circ}$-800$^{\circ}$C). The use of heat at these elevated temperatures decreases the amount of electrical energy needed to produce hydrogen from water. In the HTE process, nuclear thermal energy rather than electricity converts water to steam and then the electricity dissociates the water at the cathode to form hydrogen molecules \cite{xu_introduction_2017}.
 
 \subsection{Iodine-Sulfur Thermochemical Cycle}
 
 The concept of using nuclear heat and water allows the possibility of a sustainable production without greenhouse gases. The most simple and promising methods, in terms of efficiency, operate at very high temperatures, typically above 900$^{\circ}$C. For example, sulfur-based cycles (Fig. \ref{fig:isulfur}) use a sulfuric acid dissociation reaction that only works above 870$^{\circ}$C and whose efficiency increases with temperature \cite{cea_gas-cooled_2006}. The sulfur-iodine (SI) cycle results the best cycle for coupling to a high temperature reactor (HTR) due to its high efficiency. A General Atomics experiment has operated multiple times to produce hydrogen. The production was at a rate of 75 L/min. The same report estimates that a scaleup of the process using a 50 MWt Nuclear Reactor could produce 12000 kg/day of Hydrogen \cite{benjamin_russ_sulfur_2009}.
+The Next Generation Nuclear Plant (NGNP) \cite{cea_gas-cooled_2006} aims to produce 500 kg/h of $H_2$ by using 50MWt.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.4\linewidth]{figures/iodine-sulfur.png}
+	\includegraphics[width=0.5\linewidth]{figures/iodine-sulfur.png}
 	\hfill
 	\caption{Production of hydrogen by iodine-sulfur themochemical cycle.}
 	\label{fig:isulfur}
 \end{figure}
 
-
-
-The Next Generation Nuclear Plant (NGNP) \cite{macdonald_ngnp_2003} aims to produce 500 kg/h of $H_2$ by using 50MWth. It will also produce hydrogen by high-temperature electrolysis with an equivalent output power of 5MWth and 20MWe.
-
-more in \cite{brown_high_2003} and \cite{terada_development_2007}.
-https://www.hydrogen.energy.gov/pdfs/review05/pd27_pickard.pdf
-
 \section{Methodology}
 \label{method}
 
-A gasoline gallon equivalent (gge) is the amount of fuel that has the same amount of energy as a gallon of gasoline. One kilogram of hydrogen is equivalent to one gallon of gasoline \cite{noauthor_hydrogen_nodate}. Burning a gallon of gasoline produces 19.64 lbs of CO$_2$ \cite{noauthor_how_2014}. 
-Similarly, a diesel gallon equivalent (dge) has the same amount of energy as a gallon of diesel. Approximately, a dge is 113\% of a gge \cite{noauthor_fuel_2014}, then 1.13 Kg of hydrogen is equivalent to one gallon of diesel.
+A gasoline gallon equivalent (GGE) is the amount of fuel that has the same amount of energy as a gallon of gasoline. One kilogram of hydrogen is equivalent to one gallon of gasoline \cite{noauthor_hydrogen_nodate}. Burning a gallon of gasoline produces 19.64 lbs of CO$_2$ \cite{noauthor_how_2014}. 
+Similarly, a diesel gallon equivalent (DGE) has the same amount of energy as a gallon of diesel. Approximately, a dge is 113\% of a GGE \cite{noauthor_fuel_2014}, then 1.13 Kg of hydrogen is equivalent to one gallon of diesel.
 A gallon of diesel produces 22.38 lbs of CO$_2$ \cite{noauthor_how_2014}. 
 Table \ref{tab:meth} summarizes this information.
 
@@ -130,27 +126,46 @@ Table \ref{tab:meth} summarizes this information.
 	\centering
     \caption{GGE, DGE, and CO$_2$ produced.}
     \label{tab:meth}
-	\begin{tabular}{l|l|l|l}
+	\begin{tabular}{l|lll}
 	\hline
-	                                 & Hydrogen & Gasoline    & Diesel      \\ \hline
-	Gasoline Gallon Equivalent (GGE) & 1 Kg     & 1 Gallon    & 0.88 Gallon \\
-	Diesel Gallon Equivalent (DGE)   & 1.13 Kg  & 1.13 Gallon & 1 Gallon    \\
-    CO$_2$ produced                  & -        & 19.64 lbs   & 22.38 lbs   \\ \hline
+	                 & Hydrogen & Gasoline    & Diesel      \\ \hline
+	GGE              & 1 Kg     & 1 Gallon    & 0.88 Gallon \\
+	DGE              & 1.13 Kg  & 1.13 Gallon & 1 Gallon    \\
+    CO$_2$ produced  & -        & 19.64 lbs   & 22.38 lbs   \\ \hline
 
 	\end{tabular}
 \end{table}
 
 \section{Results}
 
-Figure \ref{fig:mtdfuel} shows the amount of diesel purchased every day by MTD in a year. The calculations take into account the assumption that MTD consumed the purchased fuel on the same day.
+Figure \ref{fig:mtdfuel} shows the amount of diesel purchased every day by MTD in a year (how to cite this??/private communitcations). The calculations take into account the assumption that MTD consumed the purchased fuel on the same day.
+Table \ref{tab:h2req} lists the required amounts of hydrogen to supply the MTD fleet. Average Gallons per day refers to the total amount of fuel consumed in a year averaged in 365 days.
 
 \begin{figure}[]
 	\centering
-	\includegraphics[width=0.4\linewidth]{figures/fuelconsumption.png}
+	\includegraphics[width=0.6\linewidth]{figures/fuelconsumption.png}
 	\hfill
 	\caption{Quantity of gallons of diesel consumed each day by MTD from July 1st 2018 to June 30th 2019.}
 	\label{fig:mtdfuel}
 \end{figure}
+
+For the case of the UIUC fleet, 227 passenger vehicles and 275 service vehicles compose the totality of the fleet \cite{noauthor_increase_2020}. The calculations consider only 108 vehicles chosen based on their annual mileage that consume 269 gasoline gallons per day \cite{holcomb_fueling_2015}. Table \ref{tab:h2req} lists the required amounts of hydrogen to supply the UIUC fleet.
+
+\begin{table}[]
+	\centering
+    \caption{Hydrogen required and CO$_2$ produced by MTD and UIUC fleets.}
+    \label{tab:h2req}
+\begin{tabular}{l|rr}
+\hline
+                              & MTD (Diesel)     & UIUC (Gasoline)  \\ \hline
+Average Gallons per day       & 1,971.8          & 269.0            \\
+Kg of Hydrogen per day        & 2,228.2          & 269.0            \\
+CO$_2$ Daily Emissions (lbs)  & 44,129.5         & 5,283.2          \\
+Gallons per year              & 719,717.6        & 98,185.0         \\
+Kg of Hydrogen per year       & 813,280.9        & 98,185.0         \\
+CO$_2$ Yearly Emissions (lbs) & 16,107,279.9     & 1,928,353.4      \\ \hline
+\end{tabular}
+\end{table}
 
 \section{Conclusion}
 
