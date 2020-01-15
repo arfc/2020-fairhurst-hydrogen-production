@@ -33,8 +33,9 @@ ref3@illinois.edu
 \newcolumntype{s}{>{\hsize=.74\hsize}X}
 \newcolumntype{f}{>{\hsize=.1\hsize}X}
 \newcolumntype{a}{>{\hsize=.45\hsize}X}
-\usepackage{titlesec}
-\titleformat*{\subsection}{\normalfont}
+%\usepackage[pagestyles]{titlesec}
+%\titleformat*{\subsection}{\normalfont}
+%\titleformat{\section}{\bfseries}{Item \thesection.\ }{0pt}{}
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,7 +55,7 @@ One possible solution to reduce carbon emissions, and even achieve a net zero ca
 
 Micro-Reactors are an innovative technology that is very attractive for hydrogen production. This type of reactors has three main features: factory fabricated, transportable, and self-regulating. All the components fully assembled in a factory and shipped out to location will reduce capital costs and allow to deploy the reactor quickly. Simple design concepts will eliminate the need of a large number of specialized operators. Moreover, they will utilize passive safey systems that prevent overheating or meltdown \cite{noauthor_ultimate_2019}.
 
-Section \ref{method} explains the method used to calculate the amount of hydrogen required to fuel Champaign-Urbana Mass Transit District (MTD) bus system and UIUC campus fleet service vehicles.
+Section \ref{method} explains the method used to calculate the amount of hydrogen required to fuel Champaign-Urbana Mass Transit District (MTD) bus system and UIUC campus fleet service vehicles, as well as the amount of CO$_2$ produced by both fleet. 
 
 \section{Hydrogen Production Methods}
 \label{section:hydroprod}
@@ -71,7 +72,7 @@ Some hydrogen production processes are:
 
 The two most common methods for producing hydrogen are steam reforming and electrolysis.
 
-\subsection{Steam Reforming:}
+\subsection{Steam Reforming}
 
 Steam reforming is currently the least expensive way to produce hydrogen. This method separates hydrogen atoms from carbon atoms in methane (CH4). This process results in carbon dioxide emissions.
 Steam reforming is a mature production process that uses high-temperature steam (700$^{\circ}$C-1000$^{\circ}$C) to produce hydrogen from a methane source. Methane reacts with steam under 3-25 bar pressure in the presence of a catalyst to produce hydrogen, carbon monoxide, and a small portion of carbon dioxide. The reaction is endothermic and requires the supply of heat to occur \cite{noauthor_hydrogen_nodate}:
@@ -85,7 +86,7 @@ CO + H_2O \rightarrow CO_2 + H_2
 
 Even with the upstream process of producing hydrogen from natural gas the process reduces the greenhouse emissions in half and the use of petroleum over a 90\% in today's gasoline vehicles \cite{noauthor_hydrogen_nodate}.
 
-\subsection{Electrolysis:}
+\subsection{Electrolysis}
 
 Electrolysis is the process of using an electric current to split water into hydrogen and oxygen, Fig. \ref{fig:electro}. The reaction takes place in a unit called electrolyzer. Electrolyzers consist of an anode and a cathode separated by an electrolyte. Different electrolyzers function in slightly different ways. A few types are polymer electrolyte membrane, alkaline, and solid oxide electrolyzers.
 
@@ -97,11 +98,11 @@ Electrolysis is the process of using an electric current to split water into hyd
 	\label{fig:electro}
 \end{figure}
 
-\subsection{High-Temperature Electrolysis (HTE):}
+\subsection{High-Temperature Electrolysis (HTE)}
 
 Solid oxide electrolyzers must operate at thermperatures high enough for the solid oxide membranes to function properly (about 700$^{\circ}$-800$^{\circ}$C). The use of heat at these elevated temperatures decreases the amount of electrical energy needed to produce hydrogen from water. In the HTE process, nuclear thermal energy rather than electricity converts water to steam and then the electricity dissociates the water at the cathode to form hydrogen molecules \cite{xu_introduction_2017}.
 
-\subsection{Iodine-Sulfur Thermochemical Cycle:}
+\subsection{Iodine-Sulfur Thermochemical Cycle}
 
 The concept of using nuclear heat and water allows the possibility of a sustainable production without greenhouse gases. The most simple and promising methods, in terms of efficiency, operate at very high temperatures, typically above 900$^{\circ}$C. For example, sulfur-based cycles (Fig. \ref{fig:isulfur}) use a sulfuric acid dissociation reaction that only works above 870$^{\circ}$C and whose efficiency increases with temperature \cite{cea_gas-cooled_2006}. The sulfur-iodine (SI) cycle results the best cycle for coupling to a high temperature reactor (HTR) due to its high efficiency. A General Atomics experiment has operated multiple times to produce hydrogen. The production was at a rate of 75 L/min. The same report estimates that a scaleup of the process using a 50 MWt Nuclear Reactor could produce 12000 kg/day of Hydrogen \cite{benjamin_russ_sulfur_2009}.
 The Next Generation Nuclear Plant (NGNP) \cite{macdonald_ngnp_2003} aims to produce 500 kg/h of H$_2$ by using 50MWt \cite{cea_gas-cooled_2006}.
@@ -118,11 +119,11 @@ The Next Generation Nuclear Plant (NGNP) \cite{macdonald_ngnp_2003} aims to prod
 \label{method}
 
 A gasoline gallon equivalent (GGE) is the amount of fuel that has the same amount of energy as a gallon of gasoline. One kilogram of hydrogen is equivalent to one gallon of gasoline \cite{noauthor_hydrogen_nodate}. Burning a gallon of gasoline produces 19.64 lbs of CO$_2$ \cite{noauthor_how_2014}. 
-Similarly, a diesel gallon equivalent (DGE) has the same amount of energy as a gallon of diesel. Approximately, a dge is 113\% of a GGE \cite{noauthor_fuel_2014}, then 1.13 Kg of hydrogen is equivalent to one gallon of diesel.
+Similarly, a diesel gallon equivalent (DGE) has the same amount of energy as a gallon of diesel. Approximately, a DGE is 113\% of a GGE \cite{noauthor_fuel_2014}, then 1.13 Kg of hydrogen is equivalent to one gallon of diesel.
 A gallon of diesel produces 22.38 lbs of CO$_2$ \cite{noauthor_how_2014}. 
 Table \ref{tab:meth} summarizes this information.
 
-\begin{table}[]
+\begin{table}[!h]
 	\centering
     \caption{GGE, DGE, and CO$_2$ produced.}
     \label{tab:meth}
@@ -141,9 +142,9 @@ Table \ref{tab:meth} summarizes this information.
 Figure \ref{fig:mtdfuel} shows the amount of diesel purchased every day by MTD in a year (how to cite this??/private communitcations). The calculations take into account the assumption that MTD consumed the purchased fuel on the same day.
 Table \ref{tab:h2req} lists the required amounts of hydrogen to supply the MTD fleet. Average Gallons per day refers to the total amount of fuel consumed in a year averaged in 365 days.
 
-\begin{figure}[]
+\begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{figures/fuelconsumption.png}
+	\includegraphics[width=1.05\linewidth]{figures/fuelconsumption.png}
 	\hfill
 	\caption{Quantity of gallons of diesel consumed each day by MTD from July 1st 2018 to June 30th 2019.}
 	\label{fig:mtdfuel}
@@ -157,17 +158,21 @@ For the case of the UIUC fleet, 227 passenger vehicles and 275 service vehicles 
     \label{tab:h2req}
 \begin{tabular}{l|rr}
 \hline
-                              & MTD (Diesel)     & UIUC (Gasoline)  \\ \hline
-Average Gallons per day       & 1,971.8          & 269.0            \\
-Kg of Hydrogen per day        & 2,228.2          & 269.0            \\
-CO$_2$ Daily Emissions (lbs)  & 44,129.5         & 5,283.2          \\
-Gallons per year              & 719,717.6        & 98,185.0         \\
-Kg of Hydrogen per year       & 813,280.9        & 98,185.0         \\
-CO$_2$ Yearly Emissions (lbs) & 16,107,279.9     & 1,928,353.4      \\ \hline
+                          & MTD(Diesel)     & UIUC(Gasoline)  \\ \hline
+Average gal/day           & 1,971.8          & 269.0            \\
+Kg of H$_2$/day           & 2,228.2          & 269.0            \\
+CO$_2$ emitted (lbs/day)  & 44,129.5         & 5,283.2          \\
+Gal/year                  & 719,717.6        & 98,185.0         \\
+Kg of H$_2$/year          & 813,280.9        & 98,185.0         \\
+CO$_2$ emitted (lbs/year) & 16,107,279.9     & 1,928,353.4      \\ \hline
 \end{tabular}
 \end{table}
 
 \section{Conclusion}
+
+Transportation produces large amounts of CO$_2$ in Champaign-Urbana, Illinois, and the United States. This has negative effects on the environment, and intensifies climate change. The University of Illinois is actively working to stop this on campus. Switching to a hydrogen economy could be the answer to the problem. Nuclear energy could contribute to achieve this goal as well. As seen before, some methods of producing hydrogen are not entirely emissions free, still having some negative impact. Having a Micro-Reactor on campus would ease the greenhouse gases emissions by producing hydrogen regardless the weather conditions (contrary to renewables).
+
+Another clear advantage of producing the hydrogen with Micro-Reactors is decentralization. Hydrogen technologies present many challenges like are transportation and storage \cite{office_of_energy_efficiency_and_renewable_energy_hydrogen_2020}. Consequently, being able to produce the fuel in the proximities to where the vehicles will use it, becomes a clear advantage, as transportation and storage in large scales are not a concern anymore.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliographystyle{ans}
