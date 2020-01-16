@@ -18,6 +18,7 @@ ref3@illinois.edu
 \usepackage{subcaption}
 \usepackage{enumitem}
 \usepackage{placeins}
+\usepackage{amsmath}
 \usepackage[acronym,toc]{glossaries}
 \include{acros}
 \makeglossaries
@@ -41,7 +42,7 @@ ref3@illinois.edu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-Climate change presents a threat that we should take seriously. Decarbonizing the electric grid through variable renewable energy and nuclear power seems to be a remedy, but not the ultimate solution. As seen in Figure \ref{fig:ghg}, transportation was the greatest source of greenhouse gases (GHG) emissions in the US in 2017. It is important to decarbonize transportation to halt climate change. The University of Illinois at Urbana-Champaign (UIUC) is doing its part by excecuting the Illinois Climate Action Plan (iCAP). The iCAP goal is to attain carbon neutrality considerably by 2050 \cite{noauthor_illlinois_2015}.
+Climate change presents a threat that we should take seriously. Decarbonizing the electric grid through variable renewable energy and nuclear power seems to be a remedy, but not the ultimate solution. As seen in Figure \ref{fig:ghg}, transportation was the greatest source of greenhouse gases (GHG) emissions in the US in 2017. It is of extreme importance to decarbonize transportation to halt climate change. The University of Illinois at Urbana-Champaign (UIUC) is doing its part by executing the Illinois Climate Action Plan (iCAP). The iCAP goal is to attain carbon neutrality considerably by 2050 \cite{noauthor_illlinois_2015}.
 
 \begin{figure}[H]
 	\centering
@@ -53,7 +54,7 @@ Climate change presents a threat that we should take seriously. Decarbonizing th
 
 One possible solution to reduce carbon emissions, and even achieve a net zero carbon production, is to develop a hydrogen economy as the state of California is currently doing \cite{brown_economic_2013}. Some hydrogen production methods reduce, but do not eliminate, the production of CO$_2$. Nuclear reactors introduce a solution to this problem by providing clean energy to produce H$_2$.
 
-Micro-reactors are an innovative technology that is very attractive for hydrogen production. This type of reactor has three main features: factory fabricated, transportable, and self-regulating. All of the components are fully assembled in a factory and shipped out to location, reducing capital costs and enabling rapid deployment. Simple design concepts eliminate the need of a large number of specialized operators. Moreover, they utilize passive safety systems that prevent overheating or meltdown \cite{noauthor_ultimate_2019}.
+Micro-reactors are an innovative technology that is attractive for hydrogen production. This type of reactor has three main features: factory fabricated, transportable, and self-regulating. All of the components are fully assembled in a factory and shipped out to location, reducing capital costs and enabling rapid deployment. Simple design concepts eliminate the need for a large number of specialized operators. Moreover, they utilize passive safety systems that prevent overheating or meltdown \cite{noauthor_ultimate_2019}.
 
 The purpose of this abstract is to review and evaluate methods of hydrogen production for a hydrogen economy at the UIUC campus.
 Section \ref{section:hydroprod} presents several methods and Section \ref{method} explains the methodology to calculate the amount of hydrogen required to fuel Champaign-Urbana Mass Transit District (MTD) bus system and UIUC campus fleet service vehicles, as well as the amount of CO$_2$ produced by both fleets.
@@ -77,19 +78,23 @@ The following subsections describe some of these methods.
 
 Steam reforming is currently the least expensive way to produce hydrogen. This method separates hydrogen atoms from carbon atoms in methane (CH$_4$). This process results in carbon dioxide emissions.
 Steam reforming is a mature production process that uses high-temperature steam (700$^{\circ}$C-1000$^{\circ}$C) to produce hydrogen from a methane source. Methane reacts with steam under 3-25 bar pressure in the presence of a catalyst to produce hydrogen, carbon monoxide, and a small portion of carbon dioxide. The reaction is endothermic and requires the supply of heat to occur \cite{noauthor_hydrogen_nodate}:
-\begin{equation}
-CH_4 + H_2O + heat \rightarrow CO + 3H_2
-\end{equation}
-A secondary reaction known as water-gas shift reaction occurs producing CO$_2$ and more hydrogen:
-\begin{equation}
-CO + H_2O \rightarrow CO_2 + H_2
-\end{equation}
 
-Even with the process of producing hydrogen from natural gas, vehicles reduce their GHG emissions in half \cite{noauthor_hydrogen_nodate}.
+\begin{align}
+CH_4 + H_2O + heat & \rightarrow CO + 3H_2
+\label{eq:1}
+\end{align}
+
+A secondary reaction known as water-gas shift reaction occurs producing CO$_2$ and more hydrogen:
+\begin{align}
+CO + H_2O & \rightarrow CO_2 + H_2
+\label{eq:2}
+\end{align}
+
+Although the method produces CO$_2$, vehicles reduce their GHG emissions in half \cite{noauthor_hydrogen_nodate}.
 
 \subsection{Electrolysis}
 
-Electrolysis is the process of using an electric current to split water into hydrogen and oxygen, Fig. \ref{fig:electro}. The reaction takes place in a unit called electrolyzer. Electrolyzers consist of an anode and a cathode separated by an electrolyte. Different electrolyzers function in slightly different ways. A few types are polymer electrolyte membrane, alkaline, and solid oxide electrolyzers.
+Electrolysis is the process of using an electric current to split water into hydrogen and oxygen, Figure \ref{fig:electro}. The reaction takes place in a unit called electrolyzer. Electrolyzers consist of an anode and a cathode separated by an electrolyte. Different electrolyzers function in slightly different ways. A few types are polymer electrolyte membrane, alkaline, and solid oxide electrolyzers.
 
 \begin{figure}[]
 	\centering
@@ -105,14 +110,14 @@ Solid oxide electrolyzers must operate at temperatures high enough for the solid
 
 \subsection{Iodine-Sulfur Thermochemical Cycle}
 
-The concept of using nuclear heat and water allows the possibility of a sustainable production without GHG. The most efficient methods operate at very high temperatures, typically above 900$^{\circ}$C. For example, sulfur-based cycles (Fig. \ref{fig:isulfur}) use a sulfuric acid dissociation reaction that only works above 870$^{\circ}$C and whose efficiency increases with temperature \cite{cea_gas-cooled_2006}. The sulfur-iodine (SI) cycle results the best cycle for coupling to a high temperature reactor (HTR) due to its high efficiency. A General Atomics experiment has operated multiple times to produce hydrogen. The production was at a rate of 75 L/min. The same report estimates that a scale-up of the process using a 50 MWth Nuclear Reactor could produce 12000 kg/day of Hydrogen \cite{benjamin_russ_sulfur_2009}.
+The concept of using nuclear heat and water allows the possibility of a sustainable production without GHG. The most efficient methods operate at considerably high temperatures, typically above 900$^{\circ}$C. For example, sulfur-based cycles (Figure \ref{fig:isulfur}) use a sulfuric acid dissociation reaction that only works above 870$^{\circ}$C and whose efficiency increases with temperature \cite{cea_gas-cooled_2006}. The sulfur-iodine (SI) cycle results the best cycle for coupling to a high temperature reactor (HTR) due to its high efficiency. A General Atomics experiment has operated multiple times to produce hydrogen. The production was at a rate of 75 L/min. The same report estimates that a scale-up of the process using a 50 MWth Nuclear Reactor could produce 12000 kg/day of hydrogen \cite{benjamin_russ_sulfur_2009}.
 Another example of hydrogen production is by the Next Generation Nuclear Plant (NGNP) \cite{macdonald_ngnp_2003} which aims to produce 500 kg/h of H$_2$ by using 50 MWth \cite{cea_gas-cooled_2006}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\linewidth]{figures/iodine-sulfur.png}
 	\hfill
-	\caption{Production of hydrogen by iodine-sulfur themochemical cycle.}
+	\caption{Production of hydrogen by iodine-sulfur thermochemical cycle.}
 	\label{fig:isulfur}
 \end{figure}
 
@@ -171,7 +176,7 @@ CO$_2$ emitted (lbs/year) & 16,107,279.9     & 1,928,353.4      \\ \hline
 
 \section{Conclusion}
 
-Transportation produces large amounts of CO$_2$ in Champaign-Urbana, Illinois, and the United States. This has negative effects on the environment, and intensifies climate change. The University of Illinois is leading by example and actively working to reduce GHG emissions on its campus. Switching to a hydrogen economy could be the answer to reducing CO$_2$ from transportation. 
+Transportation produces large amounts of CO$_2$ in Champaign-Urbana, Illinois, and the United States. This has negative effects on the environment and intensifies climate change. The University of Illinois is leading by example and actively working to reduce GHG emissions on its campus. Switching to a hydrogen economy could be the answer to reducing CO$_2$ from transportation. 
 
 Nuclear energy could contribute as well. As seen before, some methods of producing hydrogen are not entirely emissions free. A micro-reactor on campus would ease the GHG emissions by producing energy for H$_2$ production regardless of weather conditions (in contrast with renewables). Additionally, the most efficient methods run at high temperatures resulting, again, nuclear energy one of the best options.
 
