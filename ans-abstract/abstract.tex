@@ -22,6 +22,10 @@ ref3@illinois.edu
 \usepackage[acronym,toc]{glossaries}
 \include{acros}
 \makeglossaries
+\usepackage[printwatermark]{xwatermark}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{lipsum}
 
 \newcommand{\SN}{S$_N$}
 \renewcommand{\vec}[1]{\bm{#1}} %vector is bold italic
@@ -38,11 +42,13 @@ ref3@illinois.edu
 %\titleformat*{\subsection}{\normalfont}
 %\titleformat{\section}{\bfseries}{Item \thesection.\ }{0pt}{}
 
+\newwatermark[allpages,color=gray!50,angle=45,scale=3,xpos=0,ypos=0]{DRAFT}
+
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-Climate change presents a threat that we should take seriously. Decarbonizing the electric grid through variable renewable energy and nuclear power seems to be a remedy, but not the ultimate solution. As seen in Figure \ref{fig:ghg}, transportation was the greatest source of greenhouse gases (GHG) emissions in the US in 2017. It is of extreme importance to decarbonize transportation to halt climate change. The University of Illinois at Urbana-Champaign (UIUC) is doing its part by executing the Illinois Climate Action Plan (iCAP). The iCAP goal is to attain carbon neutrality by 2050 \cite{noauthor_illlinois_2015}.
+Climate change presents a threat that we should take seriously. Decarbonizing the electric grid through variable renewable energy and nuclear power seems to be a remedy. Unfortunately, a carbon neutral electric grid will not be enough to halt climate change because transportation contributes more to greenhouse gas (GHG) emissions than energy production. As seen in Figure \ref{fig:ghg}, transportation produced the greatest amount of GHG in the US in 2017. Thus, it is necessary to decarbonize transportation. The University of Illinois at Urbana-Champaign (UIUC) is doing its part by executing the Illinois Climate Action Plan (iCAP). The iCAP goal is to attain carbon neutrality by 2050 \cite{noauthor_illlinois_2015}.
 
 \begin{figure}[H]
 	\centering
@@ -176,11 +182,15 @@ CO$_2$ emitted (lbs/year) & 16,107,279.9     & 1,928,353.4      \\ \hline
 
 \section{Conclusion}
 
-Transportation produces large amounts of CO$_2$ in Champaign-Urbana, Illinois, and the United States. This has negative effects on the environment and intensifies climate change. The University of Illinois is leading by example and actively working to reduce GHG emissions on its campus. Switching to a hydrogen economy could be the answer to reducing CO$_2$ from transportation. 
+Transportation produces large amounts of CO$_2$ in Champaign-Urbana and the United States. This has negative effects on the environment and intensifies climate change. The University of Illinois is leading by example and actively working to reduce GHG emissions on its campus. Switching to a hydrogen economy could be the answer to reducing CO$_2$ from transportation.
 
-Nuclear energy could contribute as well. As seen before, some methods of producing hydrogen are not entirely emissions free. A micro-reactor on campus would ease the GHG emissions by producing energy for H$_2$ production regardless of weather conditions (in contrast with renewables). Additionally, the most efficient methods run at high temperatures resulting, again, nuclear energy one of the best options.
+Nuclear energy could contribute as well. As seen before, some methods of producing hydrogen are not entirely emissions free. A micro-reactor on campus would ease the GHG emissions by producing energy for H$_2$ production regardless of weather conditions (in contrast with renewables). Additionally, the most efficient methods run at high temperatures, another reason nuclear is appealing.
 
-Another clear advantage of using micro-reactors is decentralization. Hydrogen technologies still present many challenges such as transportation and storage \cite{office_of_energy_efficiency_and_renewable_energy_hydrogen_2020}\cite{office_of_energy_efficiency_and_renewable_energy_hydrogen_delivery_2020} and, consequently, producing fuel locally results advantageous.
+Another advantage of using micro-reactors is decentralization. Hydrogen technologies still present many challenges in transportation and storage \cite{office_of_energy_efficiency_and_renewable_energy_hydrogen_2020}\cite{office_of_energy_efficiency_and_renewable_energy_hydrogen_delivery_2020} and producing fuel locally reduces the need for both.
+
+\section{Acknowledments}
+
+The authors thank MTD for their contributions to the development of this document.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliographystyle{ans}
