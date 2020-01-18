@@ -22,6 +22,7 @@ ref3@illinois.edu
 \usepackage[acronym,toc]{glossaries}
 \include{acros}
 \makeglossaries
+
 \usepackage[printwatermark]{xwatermark}
 \usepackage{xcolor}
 \usepackage{graphicx}
@@ -42,13 +43,13 @@ ref3@illinois.edu
 %\titleformat*{\subsection}{\normalfont}
 %\titleformat{\section}{\bfseries}{Item \thesection.\ }{0pt}{}
 
-\newwatermark[allpages,color=gray!50,angle=45,scale=3,xpos=0,ypos=0]{DRAFT}
+%\newwatermark[allpages,color=gray!50,angle=45,scale=3,xpos=0,ypos=0]{DRAFT}
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-Climate change presents a threat that we should address swiftly. Decarbonizing the electric grid through variable renewable energy and nuclear power seems to be a remedy. Unfortunately, a carbon neutral electric grid will not be enough to halt climate change because transportation contributes more to greenhouse gas (GHG) emissions than energy production. As seen in Figure \ref{fig:ghg}, transportation produced the greatest amount of GHG in the US in 2017. Thus, it is necessary to decarbonize transportation. The University of Illinois at Urbana-Champaign (UIUC) is doing its part by executing the Illinois Climate Action Plan (iCAP). The iCAP goal is to attain carbon neutrality by 2050 \cite{noauthor_illlinois_2015}.
+Climate change presents a threat that we should address swiftly. Decarbonizing the electric grid through variable renewable energy and nuclear power seems to be a remedy. Unfortunately, a carbon neutral electric grid will not be enough to halt climate change because transportation contributes more to \gls{GHG} emissions than electricity. As seen in Figure \ref{fig:ghg}, transportation produced the greatest amount of \glspl{GHG} in the US in 2017. Thus, it is necessary to decarbonize transportation. The \gls{UIUC} is doing its part by executing the Illinois Climate Action Plan (iCAP). The iCAP goal is to attain carbon neutrality by 2050 \cite{noauthor_illlinois_2015}.
 
 \begin{figure}[H]
 	\centering
@@ -58,31 +59,30 @@ Climate change presents a threat that we should address swiftly. Decarbonizing t
 	\label{fig:ghg}
 \end{figure}
 
-One possible solution to reduce carbon emissions, and even achieve a net zero carbon production, is to develop a hydrogen economy as the state of California is currently doing \cite{brown_economic_2013}. Some hydrogen production methods reduce, but do not eliminate, the production of CO$_2$. Nuclear reactors introduce a solution to this problem by providing clean energy to produce H$_2$.
+One possible solution to reduce carbon emissions, and even achieve a net zero carbon production, is to develop a hydrogen economy as the state of California is currently doing \cite{brown_economic_2013}. Although using hydrogen does not produce CO$_2$, some of the hydrogen production methods still do it. Nuclear reactors introduce a solution to this problem by providing clean energy to produce H$_2$.
 
-Micro-reactors are an innovative technology that is attractive for hydrogen production. This type of reactor has three main features: factory fabricated, transportable, and self-regulating. All of the components are fully assembled in a factory and shipped out to location, reducing capital costs and enabling rapid deployment. Simple design concepts eliminate the need for a large number of specialized operators. Moreover, they utilize passive safety systems that prevent overheating or meltdown \cite{noauthor_ultimate_2019}.
+Micro-reactors are an innovative technology that is attractive for hydrogen production. Several micro-reactor designs are currently under development in the United States. This type of reactor has three main features: factory fabricated, transportable, and self-regulating. All of the components are fully assembled in a factory and shipped out to location, reducing capital costs and enabling rapid deployment. Simple design concepts eliminate the need for a large number of specialized operators. Moreover, they utilize passive safety systems that prevent overheating or meltdown \cite{noauthor_ultimate_2019}.
 
-The purpose of this abstract is to review and evaluate methods of hydrogen production for a hydrogen economy at the UIUC campus.
-Section \ref{section:hydroprod} presents several methods and Section \ref{method} explains the methodology to calculate the amount of hydrogen required to fuel Champaign-Urbana Mass Transit District (MTD) bus system and UIUC campus fleet service vehicles, as well as the amount of CO$_2$ produced by both fleets.
+The purpose of this abstract is to review and evaluate methods of hydrogen production for a hydrogen economy on a campus similar to the UIUC campus.
+Section \ref{section:hydroprod} presents several methods and Section \ref{method} explains the methodology to calculate the amount of hydrogen required to fuel Champaign-Urbana Mass Transit District (MTD) bus system and a portion of UIUC campus fleet service vehicles, as well as the amount of CO$_2$ produced by both fleets.
 
 \section{Hydrogen Production Methods}
 \label{section:hydroprod}
 
 Some hydrogen production processes are: 
 \begin{description}[font=$\bullet$\scshape\bfseries]
-	\item[] Steam-Methane Reforming (aka Natural Gas Reforming).
-	\item[] Electrolysis.
-	\item[] High-Temperature Electrolysis.
-	\item[] Iodine-Sulfur Thermochemical Cycle.
-	\item[] Coal Gasification with CCS (aka Carbon Sequestration).
-	\item[] Solar Thermochemical Hydrogen Production.
+	\item[] Steam-Methane Reforming \cite{noauthor_hydrogen_nodate}
+	\item[] Electrolysis \cite{noauthor_hydrogen_nodate}
+	\item[] Iodine-Sulfur Thermochemical Cycle \cite{cea_gas-cooled_2006}
+	\item[] Coal Gasification \cite{office_of_energy_efficiency_and_renewable_energy_coal_gas_2020}
+	\item[] Thermochemical Water Splitting \cite{office_of_energy_efficiency_and_renewable_energy_thermo_water_2020}
 \end{description}
 
 The following subsections describe some of these methods.
 
 \subsection{Steam Reforming}
 
-Steam reforming is currently the least expensive way to produce hydrogen. This method separates hydrogen atoms from carbon atoms in methane (CH$_4$). This process results in carbon dioxide emissions.
+Steam reforming (aka Natural Gas Reforming) is currently the least expensive way to produce hydrogen. This method separates hydrogen atoms from carbon atoms in methane (CH$_4$). This process results in carbon dioxide emissions.
 Steam reforming is a mature production process that uses high-temperature steam (700$^{\circ}$C-1000$^{\circ}$C) to produce hydrogen from a methane source. Methane reacts with steam under 3-25 bar pressure in the presence of a catalyst to produce hydrogen, carbon monoxide, and a small portion of carbon dioxide. The reaction is endothermic and requires the supply of heat to occur \cite{noauthor_hydrogen_nodate}:
 
 \begin{align}
@@ -96,11 +96,9 @@ CO + H_2O & \rightarrow CO_2 + H_2
 \label{eq:2}
 \end{align}
 
-Although the method produces CO$_2$, vehicles reduce their GHG emissions in half \cite{noauthor_hydrogen_nodate}.
-
 \subsection{Electrolysis}
 
-Electrolysis is the process of using an electric current to split water into hydrogen and oxygen, Figure \ref{fig:electro}. The reaction takes place in a unit called electrolyzer. Electrolyzers consist of an anode and a cathode separated by an electrolyte. Different electrolyzers function in slightly different ways. A few types are polymer electrolyte membrane, alkaline, and solid oxide electrolyzers.
+Electrolysis is the process of using an electric current to split water into hydrogen and oxygen, Figure \ref{fig:electro}. The reaction takes place in a unit called electrolyzer. Electrolyzers consist of an anode and a cathode separated by an electrolyte. Different electrolyzers function in slightly different ways. A few types are polymer electrolyte membrane, alkaline, and solid oxide electrolyzers \cite{noauthor_hydrogen_nodate}.
 
 \begin{figure}[]
 	\centering
@@ -110,28 +108,27 @@ Electrolysis is the process of using an electric current to split water into hyd
 	\label{fig:electro}
 \end{figure}
 
-\subsection{High-Temperature Electrolysis (HTE)}
-
-Solid oxide electrolyzers must operate at temperatures high enough for the solid oxide membranes to function properly (about 700$^{\circ}$-800$^{\circ}$C). The use of heat at these elevated temperatures decreases the amount of electrical energy needed to produce hydrogen from water. In the HTE process, thermal energy rather than electricity converts water to steam and then the electricity dissociates the water at the cathode to form hydrogen molecules \cite{xu_introduction_2017}.
+Solid oxide electrolyzers must operate at temperatures high enough for the solid oxide membranes to function properly (about 700$^{\circ}$-800$^{\circ}$C). The use of heat at these elevated temperatures decreases the amount of electrical energy needed to produce hydrogen from water.
+Thermal energy rather than electricity converts water to steam and then the electricity dissociates the water at the cathode to form hydrogen molecules \cite{xu_introduction_2017}.
 
 \subsection{Iodine-Sulfur Thermochemical Cycle}
 
-The concept of using nuclear heat and water allows the possibility of a sustainable production without GHG. The most efficient methods operate at considerably high temperatures, typically above 900$^{\circ}$C. For example, sulfur-based cycles (Figure \ref{fig:isulfur}) use a sulfuric acid dissociation reaction that only works above 870$^{\circ}$C and whose efficiency increases with temperature \cite{cea_gas-cooled_2006}. The sulfur-iodine (SI) cycle results the best cycle for coupling to a high temperature reactor (HTR) due to its high efficiency. A General Atomics experiment has operated multiple times to produce hydrogen. The production was at a rate of 75 L/min. The same report estimates that a scale-up of the process using a 50 MWth Nuclear Reactor could produce 12000 kg/day of hydrogen \cite{benjamin_russ_sulfur_2009}.
+The most efficient methods operate at considerably high temperatures, typically above 900$^{\circ}$C. Sulfur-based cycles (Figure \ref{fig:isulfur}) use a sulfuric acid dissociation reaction that only works above 870$^{\circ}$C and whose efficiency increases with temperature \cite{cea_gas-cooled_2006}. The sulfur-iodine (SI) cycle results the best cycle for coupling to a high temperature reactor (HTR) due to its high efficiency. A General Atomics experiment has operated multiple times to produce hydrogen. The production was at a rate of 75 L/min. The same report estimates that a scale-up of the process using a 50 MWth Nuclear Reactor could produce 12000 kg/day of hydrogen \cite{benjamin_russ_sulfur_2009}.
 Another example of hydrogen production is by the Next Generation Nuclear Plant (NGNP) \cite{macdonald_ngnp_2003} which aims to produce 500 kg/h of H$_2$ by using 50 MWth \cite{cea_gas-cooled_2006}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.85\linewidth]{figures/iodine-sulfur.png}
+	\includegraphics[width=0.9\linewidth]{figures/iodine-sulfur.png}
 	\hfill
-	\caption{Production of hydrogen by iodine-sulfur thermochemical cycle.}
+	\caption{Production of hydrogen by iodine-sulfur thermochemical cycle \cite{cea_gas-cooled_2006}.}
 	\label{fig:isulfur}
 \end{figure}
 
 \section{Methodology}
 \label{method}
 
-A gasoline gallon equivalent (GGE) is the amount of fuel that has the same amount of energy as a gallon of gasoline. One kilogram of hydrogen is equivalent to one gallon of gasoline \cite{noauthor_hydrogen_nodate}. Burning a gallon of gasoline produces 19.64 lbs of CO$_2$ \cite{noauthor_how_2014}. 
-Similarly, a diesel gallon equivalent (DGE) has the same amount of energy as a gallon of diesel. Approximately, a DGE is 113\% of a GGE \cite{noauthor_fuel_2014}, then 1.13 Kg of hydrogen is equivalent to one gallon of diesel.
+A gasoline gallon equivalent (GGE) is the amount of fuel that can generate equivalent energy to a gallon of gasoline. One kilogram of hydrogen is equivalent to one gallon of gasoline \cite{noauthor_hydrogen_nodate}. Burning a gallon of gasoline produces 19.64 lbs of CO$_2$ \cite{noauthor_how_2014}. 
+Similarly, a diesel gallon equivalent (DGE) has the same amount of energy as a gallon of diesel. Approximately, a DGE is 113\% of a GGE \cite{noauthor_fuel_2014}, then 1.13 kg of hydrogen is equivalent to one gallon of diesel.
 A gallon of diesel produces 22.38 lbs of CO$_2$ \cite{noauthor_how_2014}. 
 Table \ref{tab:meth} summarizes this information.
 
@@ -142,8 +139,8 @@ Table \ref{tab:meth} summarizes this information.
 	\begin{tabular}{l|lll}
 	\hline
 	                 & Hydrogen & Gasoline    & Diesel      \\ \hline
-	GGE              & 1 Kg     & 1 Gallon    & 0.88 Gallon \\
-	DGE              & 1.13 Kg  & 1.13 Gallon & 1 Gallon    \\
+	GGE              & 1 kg     & 1 gallon    & 0.88 gallon \\
+	DGE              & 1.13 kg  & 1.13 gallon & 1 gallon    \\
     CO$_2$ produced  & -        & 19.64 lbs   & 22.38 lbs   \\ \hline
 
 	\end{tabular}
@@ -151,18 +148,18 @@ Table \ref{tab:meth} summarizes this information.
 
 \section{Results}
 
-Figure \ref{fig:mtdfuel} shows the amount of diesel purchased every day by MTD in a year \cite{mtd_irecords_2019}. The calculations take into account the assumption that MTD consumed the purchased fuel on the same day.
-Table \ref{tab:h2req} lists the required amounts of hydrogen to supply the MTD fleet. Average Gallons per day refers to the total amount of fuel consumed in a year averaged in 365 days. 
+Figure \ref{fig:mtdfuel} shows the amount of diesel purchased every day by MTD in a year. The data go from July 1st of 2018 to June 30th of 2019 \cite{mtd_irecords_2019}. The calculations take into account the assumption that MTD consumed the purchased fuel on the same day.
+Table \ref{tab:h2req} lists the required amounts of hydrogen to supply the MTD fleet. Average gallons per day refers to the total amount of fuel consumed in a year averaged in 365 days. 
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1.05\linewidth]{figures/fuelconsumption.png}
 	\hfill
-	\caption{Quantity of gallons of diesel consumed each day by MTD from July 1st 2018 to June 30th 2019.}
+	\caption{Gallons of diesel consumed each day by MTD from July 1, 2018 to June 30, 2019.}
 	\label{fig:mtdfuel}
 \end{figure}
 
-The UIUC fleet counts with 227 passenger vehicles and 275 service vehicles \cite{noauthor_increase_2020}. The calculations consider only 108 vehicles chosen based on their annual mileage that combined consume 269 gasoline gallons per day \cite{holcomb_fueling_2015}. Table \ref{tab:h2req} lists the required amounts of hydrogen to supply the UIUC fleet. The table also shows the amount of CO$_2$ emitted by both fleets.
+The UIUC fleet includes 227 passenger vehicles and 275 service vehicles \cite{noauthor_increase_2020}. The calculations consider only 108 vehicles chosen based on their annual mileage. The 108 vechicles combined consume 269 gasoline gallons per day \cite{holcomb_fueling_2015}. Table \ref{tab:h2req} lists the hydrogen required to supply the UIUC fleet. The table also shows the amount of CO$_2$ emitted by both fleets.
 
 \begin{table}[]
 	\centering
@@ -170,27 +167,28 @@ The UIUC fleet counts with 227 passenger vehicles and 275 service vehicles \cite
     \label{tab:h2req}
 \begin{tabular}{l|rr}
 \hline
-                          & MTD(Diesel)      & UIUC(Gasoline)   \\ \hline
-Average gal/day           & 1,971.8          & 269.0            \\
-Kg of H$_2$/day           & 2,228.2          & 269.0            \\
-CO$_2$ emitted (lbs/day)  & 44,129.5         & 5,283.2          \\
-Gal/year                  & 719,717.6        & 98,185.0         \\
-Kg of H$_2$/year          & 813,280.9        & 98,185.0         \\
-CO$_2$ emitted (lbs/year) & 16,107,279.9     & 1,928,353.4      \\ \hline
+                   & MTD (Diesel)   & UIUC (Gasoline)  \\ \hline
+Average gal/day    & 1,971.8        & 269.0            \\
+kg of H$_2$/day    & 2,228.2        & 269.0            \\
+CO$_2$ (lbs/day)   & 44,129.5       & 5,283.2          \\
+gal/year           & 719,717.6      & 98,185.0         \\
+kg of H$_2$/year   & 813,280.9      & 98,185.0         \\
+CO$_2$ (lbs/year)  & 16,107,279.9   & 1,928,353.4      \\ \hline
 \end{tabular}
 \end{table}
+
+Both fleets combined would consume 2240.8 kg/day of H$_2$. A micro-reactor feeding a iodine-sulfur thermochemical cycle would need 10 MWth of power to meet that daily average demand of hydrogen.
 
 \section{Conclusion}
 
 Transportation produces large amounts of CO$_2$ in Champaign-Urbana and the United States. This has negative effects on the environment and intensifies climate change. The University of Illinois is leading by example and actively working to reduce GHG emissions on its campus. Switching to a hydrogen economy could be the answer to reducing CO$_2$ from transportation.
 
-Nuclear energy could contribute as well. As seen before, some methods of producing hydrogen are not entirely emissions free. A micro-reactor on campus would ease the GHG emissions by producing energy for H$_2$ production regardless of weather conditions (in contrast with renewables). Additionally, the most efficient methods run at high temperatures, another reason nuclear is appealing.
-
-Another advantage of using micro-reactors is decentralization. Hydrogen technologies still present many challenges in transportation and storage \cite{office_of_energy_efficiency_and_renewable_energy_hydrogen_2020}\cite{office_of_energy_efficiency_and_renewable_energy_hydrogen_delivery_2020} and producing fuel locally reduces the need for both.
+Nuclear energy could contribute as well. As seen before, some methods of producing hydrogen are not entirely emissions free. A micro-reactor of 10 MWth would ease the CO$_2$ emissions on campus by producing energy for H$_2$ production regardless of weather conditions (in contrast with renewables). Additionally, the most efficient methods run at high temperatures, another reason nuclear is appealing.
 
 \section{Acknowledments}
 
-The authors thank MTD for their contributions to the development of this document.
+This work was supported by an NRC grant and the Dept. of Nuclear, Plasma, and Radiological Engineering UIUC.
+Additionally, the authors would like to thank Beth Brunk from MTD for her contributions to the development of this document.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliographystyle{ans}
