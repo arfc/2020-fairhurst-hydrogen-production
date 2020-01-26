@@ -49,7 +49,7 @@ ref3@illinois.edu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-Climate change presents a threat that we should address swiftly. Decarbonizing the electric grid through variable renewable energy and nuclear power seems to be a remedy. Unfortunately, a carbon neutral electric grid will not be enough to halt climate change because transportation contributes more to \gls{GHG} emissions than electricity. As seen in Figure \ref{fig:ghg}, transportation produced the greatest amount of \glspl{GHG} in the US in 2017. Thus, it is necessary to decarbonize transportation. The \gls{UIUC} is doing its part by executing the Illinois Climate Action Plan (iCAP). The iCAP goal is to attain carbon neutrality by 2050 \cite{noauthor_illlinois_2015}.
+Climate change presents a threat that we should address swiftly. Decarbonizing the electric grid through variable renewable energy and nuclear power seems to be a remedy. Unfortunately, a carbon neutral electric grid will be insufficient to halt climate change because transportation contributes more to \gls{GHG} emissions than electricity. As seen in Figure \ref{fig:ghg}, transportation produced the most \glspl{GHG} in the US in 2017. Thus, decarbonizing transportation underpins global carbon reduction. Accordingly, the \gls{UIUC} has committed to the Illinois Climate Action Plan (iCAP) which aims to attain carbon neutrality by 2050 \cite{noauthor_illlinois_2015}.
 
 \begin{figure}[H]
 	\centering
@@ -59,12 +59,14 @@ Climate change presents a threat that we should address swiftly. Decarbonizing t
 	\label{fig:ghg}
 \end{figure}
 
-One possible solution to reduce carbon emissions, and even achieve a net zero carbon production, is to develop a hydrogen economy as the state of California is currently doing \cite{brown_economic_2013}. Although using hydrogen does not produce CO$_2$, some of the hydrogen production methods still do it. Nuclear reactors introduce a solution to this problem by providing clean energy to produce H$_2$.
+One possible solution to reduce carbon emissions, and even achieve a net zero carbon production, is to develop a hydrogen economy as the state of California is currently doing \cite{brown_economic_2013}. 
+Although using hydrogen does not produce CO$_2$, all hydrogen production methods are only as carbon-free as the source of energy they rely on (electric, heat, or both) to drive the process.
+Nuclear reactors present a clean energy option to produce H$_2$.
 
-Micro-reactors are an innovative technology that is attractive for hydrogen production. Several micro-reactor designs are currently under development in the United States. This type of reactor has three main features: factory fabricated, transportable, and self-regulating. All of the components are fully assembled in a factory and shipped out to location, reducing capital costs and enabling rapid deployment. Simple design concepts eliminate the need for a large number of specialized operators. Moreover, they utilize passive safety systems that prevent overheating or meltdown \cite{noauthor_ultimate_2019}.
+Micro-reactors are an innovative technology attractive for hydrogen production. Several micro-reactor designs are currently under development in the United States. This type of reactor has three main features: factory fabricated, transportable, and self-regulating. All of the components are fully assembled in a factory and shipped out to location, reducing capital costs and enabling rapid deployment. Simple design concepts eliminate the need for many specialized operators. Moreover, they utilize passive safety systems that prevent overheating or meltdown \cite{noauthor_ultimate_2019}.
 
 The purpose of this abstract is to review and evaluate methods of hydrogen production for a hydrogen economy on a campus similar to the UIUC campus.
-Section \ref{section:hydroprod} presents several methods and Section \ref{method} explains the methodology to calculate the amount of hydrogen required to fuel Champaign-Urbana Mass Transit District (MTD) bus system and a portion of UIUC campus fleet service vehicles, as well as the amount of CO$_2$ produced by both fleets.
+Section \ref{section:hydroprod} presents several methods and Section \ref{method} explains the methodology to calculate the mass of hydrogen required to fuel the Champaign-Urbana Mass Transit District (MTD) bus system and a portion of UIUC campus fleet service vehicles, as well as the mass of CO$_2$ produced by both fleets.
 
 \section{Hydrogen Production Methods}
 \label{section:hydroprod}
@@ -83,22 +85,23 @@ The following subsections describe some of these methods.
 \subsection{Steam Reforming}
 
 Steam reforming (aka Natural Gas Reforming) is currently the least expensive way to produce hydrogen. This method separates hydrogen atoms from carbon atoms in methane (CH$_4$). This process results in carbon dioxide emissions.
-Steam reforming is a mature production process that uses high-temperature steam (700$^{\circ}$C-1000$^{\circ}$C) to produce hydrogen from a methane source. Methane reacts with steam under 3-25 bar pressure in the presence of a catalyst to produce hydrogen, carbon monoxide, and a small portion of carbon dioxide. The reaction is endothermic and requires the supply of heat to occur \cite{noauthor_hydrogen_nodate}:
+Steam reforming is a mature production process that uses high-temperature steam (700$^{\circ}$C-1000$^{\circ}$C) to produce hydrogen from a methane source. Methane reacts with steam under 3-25 bar pressure in the presence of a catalyst to produce hydrogen, carbon monoxide, and a small portion of carbon dioxide. The reaction is endothermic and requires the supply of heat to convert methane and water to carbon monoxide and hydrogen gas with the following balance equation \cite{noauthor_hydrogen_nodate},
 
 \begin{align}
-CH_4 + H_2O + heat & \rightarrow CO + 3H_2
+CH_4 + H_2O + heat & \rightarrow CO + 3H_2 .
 \label{eq:1}
 \end{align}
 
-A secondary reaction known as water-gas shift reaction occurs producing CO$_2$ and more hydrogen:
+A secondary reaction known as water-gas shift reaction occurs given by the balance equation,
 \begin{align}
 CO + H_2O & \rightarrow CO_2 + H_2
 \label{eq:2}
 \end{align}
+producing CO$_2$ and more hydrogen.
 
 \subsection{Electrolysis}
 
-Electrolysis is the process of using an electric current to split water into hydrogen and oxygen, Figure \ref{fig:electro}. The reaction takes place in a unit called electrolyzer. Electrolyzers consist of an anode and a cathode separated by an electrolyte. Different electrolyzers function in slightly different ways. A few types are polymer electrolyte membrane, alkaline, and solid oxide electrolyzers \cite{noauthor_hydrogen_nodate}.
+Electrolysis uses an electric current to split water into hydrogen and oxygen, Figure \ref{fig:electro}. The reaction takes place in a unit called an electrolyzer. Electrolyzers consist of an anode and a cathode separated by an electrolyte. Different electrolyzers function in slightly different ways. A few types are polymer electrolyte membrane, alkaline, and solid oxide electrolyzers \cite{noauthor_hydrogen_nodate}.
 
 \begin{figure}[]
 	\centering
@@ -108,12 +111,12 @@ Electrolysis is the process of using an electric current to split water into hyd
 	\label{fig:electro}
 \end{figure}
 
-Solid oxide electrolyzers must operate at temperatures high enough for the solid oxide membranes to function properly (about 700$^{\circ}$-800$^{\circ}$C). The use of heat at these elevated temperatures decreases the amount of electrical energy needed to produce hydrogen from water.
+Solid oxide electrolyzers must operate at temperatures high enough for the solid oxide membranes to function properly (about 700$^{\circ}$-800$^{\circ}$C). The use of heat at these elevated temperatures decreases the electricity needed to produce hydrogen from water.
 Thermal energy rather than electricity converts water to steam and then the electricity dissociates the water at the cathode to form hydrogen molecules \cite{xu_introduction_2017}.
 
 \subsection{Iodine-Sulfur Thermochemical Cycle}
 
-The most efficient methods operate at considerably high temperatures, typically above 900$^{\circ}$C. Sulfur-based cycles (Figure \ref{fig:isulfur}) use a sulfuric acid dissociation reaction that only works above 870$^{\circ}$C and whose efficiency increases with temperature \cite{cea_gas-cooled_2006}. The sulfur-iodine (SI) cycle results the best cycle for coupling to a high temperature reactor (HTR) due to its high efficiency. A General Atomics experiment has operated multiple times to produce hydrogen. The production was at a rate of 75 L/min. The same report estimates that a scale-up of the process using a 50 MWth Nuclear Reactor could produce 12000 kg/day of hydrogen \cite{benjamin_russ_sulfur_2009}.
+The most efficient methods operate at considerably high temperatures, typically above 900$^{\circ}$C. Sulfur-based cycles (Figure \ref{fig:isulfur}) use a sulfuric acid dissociation reaction that only works above 870$^{\circ}$C and whose efficiency increases with temperature \cite{cea_gas-cooled_2006}. The sulfur-iodine (SI) cycle results the best cycle for coupling to a high temperature reactor (HTR) due to its high efficiency. A General Atomics experiment has operated multiple times to produce hydrogen. The production was at a rate of 75 L/min. A scale-up of the process using a 50 MWth Nuclear Reactor could produce 12000 kg/day of hydrogen \cite{benjamin_russ_sulfur_2009}.
 Another example of hydrogen production is by the Next Generation Nuclear Plant (NGNP) \cite{macdonald_ngnp_2003} which aims to produce 500 kg/h of H$_2$ by using 50 MWth \cite{cea_gas-cooled_2006}.
 
 \begin{figure}[H]
@@ -148,8 +151,8 @@ Table \ref{tab:meth} summarizes this information.
 
 \section{Results}
 
-Figure \ref{fig:mtdfuel} shows the amount of diesel purchased every day by MTD in a year. The data go from July 1st of 2018 to June 30th of 2019 \cite{mtd_irecords_2019}. The calculations take into account the assumption that MTD consumed the purchased fuel on the same day.
-Table \ref{tab:h2req} lists the required amounts of hydrogen to supply the MTD fleet. Average gallons per day refers to the total amount of fuel consumed in a year averaged in 365 days. 
+Figure \ref{fig:mtdfuel} shows the gallons of diesel purchased every day by MTD in a year. The data go from July 1st of 2018 to June 30th of 2019 \cite{mtd_irecords_2019}. The calculations assume that MTD consumed the purchased fuel on the same day.
+Table \ref{tab:h2req} lists the mass of hydrogen required to supply the MTD fleet. Average gallons per day refers to the total amount of fuel consumed in a year averaged in 365 days. 
 
 \begin{figure}[!h]
 	\centering
@@ -159,7 +162,7 @@ Table \ref{tab:h2req} lists the required amounts of hydrogen to supply the MTD f
 	\label{fig:mtdfuel}
 \end{figure}
 
-The UIUC fleet includes 227 passenger vehicles and 275 service vehicles \cite{noauthor_increase_2020}. The calculations consider only 108 vehicles chosen based on their annual mileage. The 108 vehicles combined consume 269 gasoline gallons per day \cite{holcomb_fueling_2015}. Table \ref{tab:h2req} lists the hydrogen required to supply the UIUC fleet. The table also shows the amount of CO$_2$ emitted by both fleets.
+The UIUC fleet includes 227 passenger vehicles and 275 service vehicles \cite{noauthor_increase_2020}. The calculations consider only 108 vehicles chosen based on their annual mileage. The 108 vehicles combined consume 269 gasoline gallons per day \cite{holcomb_fueling_2015}. Table \ref{tab:h2req} lists the hydrogen required to supply the UIUC fleet. The table also shows the CO$_2$ emitted by both fleets.
 
 \begin{table}[]
 	\centering
@@ -177,17 +180,17 @@ CO$_2$ (lbs/year)  & 16,107,279.9   & 1,928,353.4      \\ \hline
 \end{tabular}
 \end{table}
 
-Both fleets combined would consume 2240.8 kg/day of H$_2$. A micro-reactor feeding a iodine-sulfur thermochemical cycle would need 10 MWth of power to meet that daily average demand of hydrogen.
+Both fleets combined would consume 2240.8 kg/day of H$_2$. A micro-reactor feeding an iodine-sulfur thermochemical cycle would need 10 MWth of power to meet that daily average demand of hydrogen.
 
 \section{Conclusion}
 
-Transportation produces large amounts of CO$_2$ in Champaign-Urbana and the United States. This has negative effects on the environment and intensifies climate change. The University of Illinois is leading by example and actively working to reduce GHG emissions on its campus. Switching to a hydrogen economy could be the answer to reducing CO$_2$ from transportation.
+MTD and UIUC fleets combined emit around 9 thousand tons of CO$_2$ per year in Champaign-Urbana. This has negative effects on the environment and intensifies climate change. The University of Illinois is leading by example and actively working to reduce GHG emissions on its campus. Switching to a hydrogen economy could be the answer to reducing CO$_2$ from transportation.
 
-Nuclear energy could contribute as well. As seen before, some methods of producing hydrogen are not entirely emissions free. A micro-reactor of 10 MWth would ease the CO$_2$ emissions on campus by producing energy for H$_2$ production regardless of weather conditions (in contrast with renewables). Additionally, the most efficient methods run at high temperatures, another reason nuclear is appealing.
+Nuclear energy could contribute as well. Some energy sources are not entirely emissions free. A 10 MWth micro-reactor would ease the CO$_2$ emissions on campus by generating energy for H$_2$ production regardless of weather conditions (in contrast with renewables). Additionally, the most efficient hydrogen production methods run at high temperatures, another reason nuclear is appealing.
 
-\section{Acknowledments}
+\section{Acknowledgements}
 
-This work was supported by an NRC grant and the Dept. of Nuclear, Plasma, and Radiological Engineering UIUC.
+Roberto E. Fairhurst Agosta and Prof. Huff are supported by the Nuclear Regulatory Commission (NRC) Faculty Development Program (award NRC-HQ-84-14-G-0054 Program B). Samuel G. Dotson is supported by the NRC Graduate Fellowship Program. Prof. Huff is also supported by the Blue Waters sustained-petascale computing project supported by the National Science Foundation (awards OCI-0725070 and ACI-1238993) and the state of Illinois, the DOE ARPA-E MEITNER Program (award DE-AR0000983), the DOE H2@Scale Program (award), and the International Institute for Carbon Neutral Energy Research (WPI-I2CNER), sponsored by the Japanese Ministry of Education, Culture, Sports, Science and Technology.
 Additionally, the authors would like to thank Beth Brunk from MTD for her contributions to the development of this document.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
