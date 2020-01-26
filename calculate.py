@@ -28,9 +28,9 @@ def main():
     lunleaded = []
     ldiesel = []
     le85 = []
-    
+
     for info in lines[1:]:
-        lmonth.append(int(info[0])) 
+        lmonth.append(int(info[0]))
         lday.append(int(info[1]))
         lunleaded.append(float(info[2]))
         ldiesel.append(float(info[3]))
@@ -54,20 +54,20 @@ def main():
             sume = 0
             for i in range(len(lmonth)):
                 if lday[i] == da and lmonth[i] == mo:
-                        sumu += lunleaded[i]
-                        sumd += ldiesel[i]
-                        sume += le85[i]
+                    sumu += lunleaded[i]
+                    sumd += ldiesel[i]
+                    sume += le85[i]
             unleaded.append(round(sumu, 2))
             diesel.append(round(sumd, 2))
-            e85.append(round(sume, 2))  
-    
-    print('Total unleaded: ', round(sum(unleaded),2))
-    print('Total diesel: ', round(sum(diesel),2))
-    print('Total e85: ', round(sum(e85),2))
+            e85.append(round(sume, 2))
 
-    print('avg per day unleaded: ', round(sum(unleaded)/len(unleaded),2))
-    print('avg per day diesel: ', round(sum(diesel)/len(diesel),2))
-    print('avg per day e85: ', round(sum(e85)/len(e85),2))
+    print('Total unleaded: ', round(sum(unleaded), 2))
+    print('Total diesel: ', round(sum(diesel), 2))
+    print('Total e85: ', round(sum(e85), 2))
+
+    print('avg per day unleaded: ', round(sum(unleaded)/len(unleaded), 2))
+    print('avg per day diesel: ', round(sum(diesel)/len(diesel), 2))
+    print('avg per day e85: ', round(sum(e85)/len(e85), 2))
 
     plotfuel(unleaded)
 
