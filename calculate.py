@@ -1,8 +1,28 @@
+""" This script analyses fuel consumption in a year.
+The input data to analyze has to have 'uiuc-fuel-consumption.txt' format.
+The outputs of the script are:
+- Total fuel consumed in a year.
+- Average fuel consumed (total fuel consumed/365).
+- Plot of the fuel consumed throughout the year.
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 def plotfuel(fuel):
+    """ Plots 'fuel'.
+
+    Parameters:
+    -----------
+    fuel: list
+        list of values to be plotted. First value corresponds to the
+        beginning of the year.
+
+    Returns:
+    --------
+
+    """
     fig, ax = plt.subplots(figsize=(15, 7))
     ax.plot(fuel)
     ax.set_title('Fuel Consumption')
