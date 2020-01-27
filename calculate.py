@@ -29,7 +29,7 @@ def plotfuel(fuel):
     ax.grid()
     ax.set(xlim=(0, 364), ylim=(0, 850))
     ax.set_xlabel("Days", fontsize=14)
-    ax.set_ylabel("Quantity (Gallons)", fontsize=14)
+    ax.set_ylabel(r'Fuel Consumed $\left(\frac{gal}{d}\right)$', fontsize=14)
     handles, labels = ax.get_legend_handles_labels()
     plt.savefig('uiuc-unleaded', dpi=300, bbox_inches="tight")
     plt.close()
