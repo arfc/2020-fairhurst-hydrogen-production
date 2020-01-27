@@ -1,4 +1,4 @@
-""" 
+"""
 This script analyses fuel consumption in a year.
 The input data to analyze has to have 'uiuc-fuel-consumption.txt' format.
 The outputs of the script are:
@@ -11,8 +11,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plotfuel(fuel):
-    """ 
+def plotfuel(fuel, type):
+    """
     Plots 'fuel'.
 
     Parameters:
@@ -20,6 +20,8 @@ def plotfuel(fuel):
     fuel: list
         list of values to be plotted. First value corresponds to the
         beginning of the year.
+    type: string
+        name of the fuel
 
     Returns:
     --------
@@ -27,7 +29,8 @@ def plotfuel(fuel):
     """
     fig, ax = plt.subplots(figsize=(15, 7))
     ax.plot(fuel)
-    ax.set_title('Daily {0} Fuel Consumption by the UIUC fleet'.format(fuel.capitalize()))
+    ax.set_title('Daily {0} Fuel Consumption by the'
+                 ' UIUC fleet'.format(type.capitalize()))
     ax.grid()
     ax.set(xlim=(0, 364), ylim=(0, 850))
     ax.set_xlabel("Days", fontsize=14)
@@ -91,7 +94,7 @@ def main():
     print('avg per day diesel: ', round(sum(diesel)/len(diesel), 2))
     print('avg per day e85: ', round(sum(e85)/len(e85), 2))
 
-    plotfuel(unleaded)
+    plotfuel(unleaded, 'unleaded')
 
 
 if __name__ == "__main__":
