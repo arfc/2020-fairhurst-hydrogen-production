@@ -1,4 +1,5 @@
-""" This script analyses fuel consumption in a year.
+""" 
+This script analyses fuel consumption in a year.
 The input data to analyze has to have 'uiuc-fuel-consumption.txt' format.
 The outputs of the script are:
 - Total fuel consumed in a year.
