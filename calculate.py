@@ -25,7 +25,7 @@ def plotfuel(fuel):
     """
     fig, ax = plt.subplots(figsize=(15, 7))
     ax.plot(fuel)
-    ax.set_title('Fuel Consumption')
+    ax.set_title('Daily {0} Fuel Consumption by the UIUC fleet'.format(fuel.capitalize()))
     ax.grid()
     ax.set(xlim=(0, 364), ylim=(0, 850))
     ax.set_xlabel("Days", fontsize=14)
