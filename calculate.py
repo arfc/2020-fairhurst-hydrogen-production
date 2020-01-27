@@ -12,7 +12,8 @@ import matplotlib.pyplot as plt
 
 
 def plotfuel(fuel):
-    """ Plots 'fuel'.
+    """ 
+    Plots 'fuel'.
 
     Parameters:
     -----------
