@@ -53,14 +53,14 @@ Climate change presents a threat that we should address swiftly. Decarbonizing t
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\linewidth]{figures/total-ghg-2019-caption.jpg}
+	\includegraphics[width=0.7\linewidth]{figures/total-ghg-2019-caption.jpg}
 	\hfill
 	\caption{Total U.S. GHG Emissions by Economic Sector in 2017 \cite{us_epa_sources_2020}.}
 	\label{fig:ghg}
 \end{figure}
 
 One possible solution to reduce carbon emissions, and even achieve a net zero carbon production, is to develop a hydrogen economy as the state of California is currently doing \cite{brown_economic_2013}. 
-Although using hydrogen does not produce CO$_2$, all hydrogen production methods are only as carbon-free as the source of energy they rely on (electric, heat, or both) to drive the process.
+Although using hydrogen does not produce CO$_2$, any hydrogen production method is only as carbon-free as the source of energy it relies on (electric, heat, or both).
 Nuclear reactors present a clean energy option to produce H$_2$.
 
 Micro-reactors are an innovative technology attractive for hydrogen production. Several micro-reactor designs are currently under development in the United States. This type of reactor has three main features: factory fabricated, transportable, and self-regulating. All of the components are fully assembled in a factory and shipped out to location, reducing capital costs and enabling rapid deployment. Simple design concepts eliminate the need for many specialized operators. Moreover, they utilize passive safety systems that prevent overheating or meltdown \cite{us-doe_ultimate_2019}.
@@ -103,7 +103,7 @@ producing CO$_2$ and more hydrogen.
 
 Electrolysis uses an electric current to split water into hydrogen and oxygen, Figure \ref{fig:electro}. The reaction takes place in a unit called an electrolyzer. Electrolyzers consist of an anode and a cathode separated by an electrolyte. Different electrolyzers function in slightly different ways. A few types are polymer electrolyte membrane, alkaline, and solid oxide electrolyzers \cite{doe_office_of_energy_efficiency_and_renewable_energy_hydrogen_2020}.
 
-\begin{figure}[]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.55\linewidth]{figures/electrolysis.png}
 	\hfill
@@ -119,7 +119,7 @@ Thermal energy rather than electricity converts water to steam and then the elec
 The most efficient methods operate at considerably high temperatures, typically above 900$^{\circ}$C. Sulfur-based cycles (Figure \ref{fig:isulfur}) use a sulfuric acid dissociation reaction that only works above 870$^{\circ}$C and whose efficiency increases with temperature \cite{cea_gas-cooled_2006}. The sulfur-iodine (SI) cycle results the best cycle for coupling to a high temperature reactor (HTR) due to its high efficiency. A General Atomics experiment has operated multiple times to produce hydrogen. The production was at a rate of 75 L/min. A scale-up of the process using a 50 MWth Nuclear Reactor could produce 12000 kg/day of hydrogen \cite{benjamin_russ_sulfur_2009}.
 Another example of hydrogen production is by the Next Generation Nuclear Plant (NGNP) \cite{macdonald_ngnp_2003} which aims to produce 500 kg/h of H$_2$ by using 50 MWth \cite{cea_gas-cooled_2006}.
 
-\begin{figure}[H]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=0.9\linewidth]{figures/iodine-sulfur.png}
 	\hfill
@@ -135,7 +135,7 @@ Similarly, a diesel gallon equivalent (DGE) has the same amount of energy as a g
 A gallon of diesel produces 22.38 lbs of CO$_2$ \cite{us_energy_information_administration_how_2014}. 
 Table \ref{tab:meth} summarizes this information.
 
-\begin{table}[!h]
+\begin{table}[]
 	\centering
     \caption{GGE, DGE, and CO$_2$ produced.}
     \label{tab:meth}
@@ -154,33 +154,43 @@ Table \ref{tab:meth} summarizes this information.
 Figure \ref{fig:mtdfuel} shows the gallons of diesel purchased every day by MTD in a year. The data go from July 1st of 2018 to June 30th of 2019 \cite{mtd_irecords_2019}. The calculations assume that MTD consumed the purchased fuel on the same day.
 Table \ref{tab:h2req} lists the mass of hydrogen required to supply the MTD fleet. Average gallons per day refers to the total amount of fuel consumed in a year averaged in 365 days. 
 
-\begin{figure}[!h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=1.05\linewidth]{figures/fuelconsumption.png}
+	\includegraphics[width=1.05\linewidth]{figures/mtd-fuel-consumption.png}
 	\hfill
-	\caption{Gallons of diesel consumed each day by MTD from July 1, 2018 to June 30, 2019.}
+	\caption{Diesel gallons consumed each day by MTD from July 1, 2018 to June 30, 2019 \cite{mtd_irecords_2019}.}
 	\label{fig:mtdfuel}
 \end{figure}
 
-The UIUC fleet includes 227 passenger vehicles and 275 service vehicles \cite{uiuc_institute_for_sustainability_energy_and_environment_increase_2020}. The calculations consider only 108 vehicles chosen based on their annual mileage. The 108 vehicles combined consume 269 gasoline gallons per day \cite{holcomb_fueling_2015}. Table \ref{tab:h2req} lists the hydrogen required to supply the UIUC fleet. The table also shows the CO$_2$ emitted by both fleets.
+The UIUC fleet includes both passenger and service vehicles \cite{uiuc_institute_for_sustainability_energy_and_environment_increase_2020}. The calculations consider only the portion of the fleet that operates in town and consumes gasoline \cite{uiuc_personnal_communication}. Figure \ref{fig:uiucfuel} presents the daily consumption of unleaded gasoline by the UIUC fleet in a year. The data go from January 1st of 2019 to December 31st of 2019. The fleet also uses diesel and ethanol but in smaller proportions that future analysis will take into account.
+Table \ref{tab:h2req} lists the hydrogen required to supply the UIUC fleet.
 
-\begin{table}[]
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{figures/uiuc-unleaded.png}
+	\hfill
+	\caption{Gasoline gallons consumed each day by the UIUC fleet from January 1, 2019 to December 31, 2019 \cite{uiuc_personnal_communication}.}
+	\label{fig:uiucfuel}
+\end{figure}
+
+\begin{table}[H]
 	\centering
     \caption{Hydrogen required and CO$_2$ produced by MTD and UIUC fleets.}
     \label{tab:h2req}
 \begin{tabular}{l|rr}
 \hline
                    & MTD (Diesel)   & UIUC (Gasoline)  \\ \hline
-Average gal/day    & 1,971.8        & 269.0            \\
-kg of H$_2$/day    & 2,228.2        & 269.0            \\
-CO$_2$ (lbs/day)   & 44,129.5       & 5,283.2          \\
-gal/year           & 719,717.6      & 98,185.0         \\
-kg of H$_2$/year   & 813,280.9      & 98,185.0         \\
-CO$_2$ (lbs/year)  & 16,107,279.9   & 1,928,353.4      \\ \hline
+Average gal/day    & 1,971.8        & 251.8            \\
+kg of H$_2$/day    & 2,228.2        & 251.8            \\
+CO$_2$ (lbs/day)   & 44,129.5       & 4,945.3          \\
+gal/year           & 719,717.6      & 91,925.1         \\
+kg of H$_2$/year   & 813,280.9      & 91,925.1         \\
+CO$_2$ (lbs/year)  & 16,107,279.9   & 1,805,408.9      \\ \hline
 \end{tabular}
 \end{table}
 
-Both fleets combined would consume 2240.8 kg/day of H$_2$. A micro-reactor feeding an iodine-sulfur thermochemical cycle would need 10 MWth of power to meet that daily average demand of hydrogen.
+Table \ref{tab:h2req} also shows the CO$_2$ emitted by MTD and UIUC fleets.
+Both fleets combined would consume 2480 kg/day of H$_2$. A micro-reactor feeding an iodine-sulfur thermochemical cycle would need 10 MWth of power to meet that daily average demand of hydrogen.
 
 \section{Conclusion}
 
@@ -191,7 +201,7 @@ Nuclear energy could contribute as well. Some energy sources are not entirely em
 \section{Acknowledgements}
 
 Roberto E. Fairhurst Agosta and Prof. Huff are supported by the Nuclear Regulatory Commission (NRC) Faculty Development Program (award NRC-HQ-84-14-G-0054 Program B). Samuel G. Dotson is supported by the NRC Graduate Fellowship Program. Prof. Huff is also supported by the Blue Waters sustained-petascale computing project supported by the National Science Foundation (awards OCI-0725070 and ACI-1238993) and the state of Illinois, the DOE ARPA-E MEITNER Program (award DE-AR0000983), the DOE H2@Scale Program (award), and the International Institute for Carbon Neutral Energy Research (WPI-I2CNER), sponsored by the Japanese Ministry of Education, Culture, Sports, Science and Technology.
-Additionally, the authors would like to thank Beth Brunk from MTD for her contributions to the development of this document.
+Additionally, the authors would like to thank Beth Brunk from MTD and Pete Varney from UIUC Facilities and Services for their contributions to the development of this document.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliographystyle{ans}
