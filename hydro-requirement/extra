@@ -1,12 +1,19 @@
+\section{Steam-Methane Reforming}
+
+In steam-methane reforming high-temperature steam, 1300$^{\circ}$F to 1800$^{\circ}$F, under 3-25 bar pressure reacts with methane in the presence of a catalyst to produce hydrogen.
+
+Natural gas is the lowest cost alternative. Natural gas provides 95\% of the hydrogen used in refineries and chemical industry \cite{harstein_arthur_hydrogen_2003}.
+
+https://www.eia.gov/energyexplained/hydrogen/production-of-hydrogen.php
+https://www.sciencedirect.com/topics/engineering/methane-steam-reforming
+https://afdc.energy.gov/fuels/hydrogen_production.html
+https://en.wikipedia.org/wiki/Hydrogen_production
+https://www.energy.gov/eere/fuelcells/hydrogen-production-processes
 
 
 \section{Central Hydrogen Production from Natural Gas without CO$_2$ Sequestration}
 
 Desulfurized natural gas feedstock reacts with process steam over a nickel based catalyst inside of a system of high alloy steel tubes. The process is endothermic, and the metallurgy of the tubes limits the reaction temperature to 760 to 926 $^{\circ}$C.
-
-\section{Hydrogen Production from Natural Gas}
-
-Natural gas is the lowest cost alternative. Natural gas provides 95\% of the hydrogen used in refineries and chemical industry \cite{harstein_arthur_hydrogen_2003}.
 
 
 
