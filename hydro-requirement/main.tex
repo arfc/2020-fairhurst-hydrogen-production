@@ -45,7 +45,7 @@ fill=blue!30]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 
 \graphicspath{}
-\title{Hydrogen Production Requirements}
+\title{Hydrogen Production}
 %\author{Roberto E. Fairhurst Agosta}
 
 \begin{document}
@@ -54,93 +54,35 @@ fill=blue!30]
 %		\thispagestyle{empty}
 %	\end{titlepage}
 
-\section{Central Hydrogen Production from Natural Gas without CO$_2$ Sequestration}
+\section{Electrolysis}
 
-Desulfurized natural gas feedstock reacts with process steam over a nickel based catalyst inside of a system of high alloy steel tubes. The process is endothermic, and the metallurgy of the tubes limits the reaction temperature to 760 to 926 $^{\circ}$C.
+Electrolysis uses an electric current to split water into hydrogen and oxygen as shown in Figure \ref{fig:electro}.
+The reaction takes place in a unit called an electrolyzer.
+Electrolyzers consist of an anode and a cathode separated by an electrolyte.
+A few classes of electrolyzer technologies, distinguished by their materials and functionality, include polymer electrolyte membrane, alkaline, and solid oxide electrolyzers \cite{doe_office_of_energy_efficiency_and_renewable_energy_hydrogen_2020}.
 
-\section{Hydrogen Production from Natural Gas}
-
-Natural gas is the lowest cost alternative. Natural gas provides 95\% of the hydrogen used in refineries and chemical industry \cite{harstein_arthur_hydrogen_2003}. Syngas production. Syngas is a fuel gas mixture consisting of hydrogen, carbon monoxide, and some carbon dioxide.
-
-Fischer-Tropsch synthesis is a catalyzed chemical reactor in which synthesis gas
-
-\section{Exelon}
-
-On going project that aims to provide a basis for converting baseload nuclear plants into hybrid plants that produce hydrogen.
-Increases in variable wind and solar energy and low-cost natural gas impact baseload nuclear power generation stations make necessary a new operating paradigm for these plants.
-Hydrogen production with nuclear energy may increase the plant revenue \cite{otgonbaatar_merchant_2019}.
-
-\begin{figure}[] %H
+\begin{figure}[]
 	\centering
-	\includegraphics[width=0.6\linewidth]{figures/exelon1.jpg}
+	\includegraphics[width=0.55\linewidth]{figures/electrolysis.png}
 	\hfill
-	\caption{ \cite{otgonbaatar_merchant_2019}.}
-	\label{fig:ghg}
+	\caption{Production of hydrogen by electrolysis \cite{doe_office_of_energy_efficiency_and_renewable_energy_hydrogen_2020}.}
+	\label{fig:electro}
 \end{figure}
 
-Fuelcell Energy.
-NEL
+Solid oxide electrolyzers must operate at temperatures high enough for the solid oxide membranes to function properly (about 700$^{\circ}$-800$^{\circ}$C).
+The use of heat at these elevated temperatures decreases the electricity needed to produce hydrogen from water.
+Thermal energy rather than electricity converts water to steam and then the electricity dissociates the water at the cathode to form hydrogen molecules \cite{xu_introduction_2017}.
 
-\section{Hydrogen Storage}
-There are three basic storage methods \cite{carriveau_hydrogen_2016}:
-compressed hydrogen gas, liquid hydrogen, and solid storage of hydrogen. 
-The first two consist of changing hydrogen's physical state in gaseous or liquid form.
-The third method includes the following categories: physisorption in porous materials, absorbed on interstitial sites in a host metal, complex compounds, and metals and complexes with water.
-
-The traditional hydrogen storage facilities are complicated, and liquid hydrogen requires a refrigeration unit, adding energy costs, and a resultant of 40\% loss in energy content \cite{carriveau_hydrogen_2016}.
-
-\section{MTD Hydrogen Buses}
-
-Fuel cell buses use a battery-dominant hybrid architecture where the batteries are large enough to handle all vehicle performance needs.
-The fuel cell, Figure \ref{fig:nf2} acts like a continuous battery charger to extend the range of the vehicle.
-The Xcelsior CHARGE H2 can travel up to 350 miles on a single refueling \cite{new_flyer_xcelsior_2019}.
+It is more efficient to perform a high temperature electrolysis (HTE) and convert the steam directly. The reason is the more favorable thermodynamic and electrochemical kinetic condition for the reaction. The molar Gibbs energy of the reaction drops from 1.23eV(237 kJ/mol) at ambient temperature to 0.95 eV at 900$^{\circ}$C (183 kJ/mol) \cite{helmeth_high_2020}. As a consequence, the process requires less electricity per m$^3$ of H$_2$ generated.
 
 \begin{figure}[] %H
 	\centering
-	\includegraphics[width=0.6\linewidth]{figures/newflyer1.jpg}
+	\includegraphics[width=0.6\linewidth]{figures/electrolysis2.jpg}
 	\hfill
-	\caption{ \cite{new_flyer_xcelsior_2019}.}
-	\label{fig:nf1}
-\end{figure}
-
-\begin{figure}[] %H
-	\centering
-	\includegraphics[width=0.6\linewidth]{figures/newflyer2.jpg}
-	\hfill
-	\caption{ \cite{new_flyer_xcelsior_2019}.}
+	\caption{ Energy required for H$_2$O electrolysis \cite{helmeth_high_2020}.}
 	\label{fig:nf2}
 \end{figure}
 
-https://www.powermag.com/exelon-is-exploring-nuclear-power-plant-hydrogen-production/
-https://www.protononsite.com/sites/default/files/2016-10/pd-0600-0115_rev_a%20%281%29.pdf
-https://www.energy.gov/sites/prod/files/2019/08/f65/fcto-fy19-h2-at-scale-foa-selections.pdf
-https://www.energy.gov/sites/prod/files/2019/12/f69/fcto-fcs-h2-scale-2019-workshop-4-otgonbaatar_0.pdf
-https://www.energy.gov/eere/fuelcells/h2scale-workshop-2019-fuel-cell-seminar
-https://www.fuelcellseminar.com/schedule-at-a-glance
-https://e-catworld.com/2019/08/30/us-dept-of-energy-funds-nuclear-to-hydrogen-project/
-https://www.hydrogen.energy.gov/pdfs/review19/h2052_boardman_2019_p.pdf
-https://www.hydrogen.energy.gov/pdfs/review19/h2052_boardman_2019_p.pdf
-http://www.helmeth.eu/index.php/technologies/high-temperature-electrolysis-cell-soec
-https://h2tools.org/hyarc/hydrogen-data/basic-hydrogen-properties
-https://webbook.nist.gov/cgi/fluid.cgi?T=293&PLow=0.95&PHigh=1.05&PInc=0.02&Applet=on&Digits=5&ID=C1333740&Action=Load&Type=IsoTherm&TUnit=K&PUnit=atm&DUnit=kg%2Fm3&HUnit=kJ%2Fmol&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm&RefState=DEF
-
-\section{Different types of fertilizers}
-\cite{hugh_savoy_fertilizers_2009}
-
-\section{Nitrogen Fertilizers}
-Nitrogen fertilizers represent a major industry worldwide. Nitrogen fertilizers include many types of liquid and solid products, among which the most common ones are ammonia, ammonium nitrate, and urea \cite{guichon_valves_nitrogen_2020}.
-
-A reaction of nitrogen from the air with hydrogen from natural gas at high pressure and temperature produces ammonia by means of the Haber process (200-300 bars and 450$^{\circ}$C).
-
-For ease of handling, other types of fertilizers are preferable, see Figure \ref{fig:nitrof}. Another important fertilizer is the urea. A reaction of ammonia with carbon dioxide produces it. A combination between ammonium nitrate and urea produces another fertilizer called urea ammonium nitrate (UAN).
-
-\begin{figure}[] %use H
-	\centering
-	\includegraphics[width=\linewidth]{figures/guichon.png}
-	\hfill
-	\caption{\cite{guichon_valves_nitrogen_2020}.}
-	\label{fig:nitrof}
-\end{figure}
 
 \pagebreak
 \bibliographystyle{plain}
