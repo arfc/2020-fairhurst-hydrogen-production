@@ -9,6 +9,18 @@ https://afdc.energy.gov/fuels/hydrogen_production.html
 https://en.wikipedia.org/wiki/Hydrogen_production
 https://www.energy.gov/eere/fuelcells/hydrogen-production-processes
 
+hydrogen production consumes most of the energy in the endothermic steam methane reforming reaction. at 800-1000 $^{\circ}$C,
+\begin{equation}
+CH_4 + H_2O \rightarrow CO + 3H_2, \Delta H^{\circ}_{R, 298K} = 206.1 kJ/mol
+\end{equation}
+.
+The effluents go through a shift reactor with steam at 350-550$^{\circ}$C, to eliminate carbon monoxide and maximize hydrogen yield through the exothermic \gls{WGS}: 
+\begin{equation}
+CO + H_2O \rightarrow CO_2 + H_2, \Delta H^{\circ}_{R, 298K} = -41.2 kJ/mol
+\end{equation}
+.
+\cite{kyriakou_electrochemical_2020}
+
 \section{Iodine-Sulfur Thermochemical Splitting}
 
 https://art.inl.gov/NGNP/Subcontractors%20Documents/General%20Atomics/Sulfur%20Iodine%20Process%20Summary%20for%20the%20Hydrogen%20Technology%20Down-Selection.pdf
@@ -93,6 +105,11 @@ For ease of handling, other types of fertilizers are preferable, see Figure \ref
 	\caption{\cite{guichon_valves_nitrogen_2020}.}
 	\label{fig:nitrof}
 \end{figure}
+
+The Haber-Bosch process constitutes the dominant route for ammonia production.
+Gaseous N$_2$ and H$_2$ react at elevated pressures (>100 bar) and temperatures ($\~$500$^{\circ}$C) in presence of an Fe-based catalyst \cite{kyriakou_electrochemical_2020}.
+Nowadays, ammonia synthesis consumes 1%-2% of the total energy worldwide \cite{kyriakou_electrochemical_2020}.
+In the ammonia production process, hydrogen production consumes most of the energy in the endothermic steam methane reforming reaction \cite{kyriakou_electrochemical_2020}.
 
 \section{More}
 https://www.powermag.com/exelon-is-exploring-nuclear-power-plant-hydrogen-production/
