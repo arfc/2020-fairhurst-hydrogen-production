@@ -1,5 +1,15 @@
 \section{Steam-Methane Reforming}
 
+Steam methane reforming uses a mixture of methane and steam to obtain hydrogen, carbon monoxide, and carbon dioxide as products.
+The process uses two reformers to maximize the conversion. A 90-92% of the methane conversion occurs in the primary reformer, where the hydrocarbon reacts with the steam over a nickel - alumina catalyst to produce a synthesis gas with a H$_2$/CO ratio of 3:1.
+The process happens at 900$^{\circ}$C at a pressure of 450 psi \cite{speight_fischertropsch_2014}.
+
+Two water-gas shift reactors are downstream of the secondary reformer to adjust the H$_2$/CO ratio.
+The first of these reactors utilizes an iron-based catalyst and the second one a copper-based catalyst.
+The reactors operate at 400$^{\circ}$C and 200$^{\circ}$C, respectively.
+
+
+
 In steam-methane reforming high-temperature steam, 1300$^{\circ}$F to 1800$^{\circ}$F, under 3-25 bar pressure reacts with methane in the presence of a catalyst to produce hydrogen.
 
 Natural gas is the lowest cost alternative. Natural gas provides 95\% of the hydrogen used in refineries and chemical industry \cite{harstein_arthur_hydrogen_2003}.
@@ -36,7 +46,7 @@ Desulfurized natural gas feedstock reacts with process steam over a nickel based
 
 
 \section{Syngas}
-Fischer-Tropsch synthesis is a catalyzed chemical reactor in which synthesis gas (syngas), a mixture of carbon monoxide (CO) and hydrogen (H2) becomes a gas, liquid, and solid hydrocarbons \cite{speight_fischertropsch_2014}. This process i
+Fischer-Tropsch synthesis is a catalyzed chemical reactor in which synthesis gas (syngas), a mixture of carbon monoxide (CO) and hydrogen (H2) becomes a gas, liquid, and solid hydrocarbons \cite{speight_fischertropsch_2014}. This process is highly promising for meeting the projected increases in demand for liquid fuels. Fischer-Tropsch products are ultra clean fuels. They do not contain aromatics, sulfur, or nitrogen compounds. Compared to petroleum derived gasoline, the analogous fraction derived from the Fischer-Tropsch process will burn to produce considerably less polyaromatic hydrocarbons, and no sulfur dioxides or nitrogen oxides \cite{speight_fischertropsch_2014}.
 
 https://en.wikipedia.org/wiki/Syngas#Hydrogen
 
