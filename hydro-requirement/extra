@@ -9,6 +9,9 @@ The first of these reactors utilizes an iron-based catalyst and the second one a
 The reactors operate at 400$^{\circ}$C and 200$^{\circ}$C, respectively.
 
 
+https://www.sciencedirect.com/topics/engineering/methane-steam-reforming
+
+https://reader.elsevier.com/reader/sd/pii/B9780444641274000148?token=B21728FBA48E50BC81CE6F05801631DD42B505982FDF7D595E71E2C80C23D618E233E65C28BDF8812256F606AC3F88FD
 
 In steam-methane reforming high-temperature steam, 1300$^{\circ}$F to 1800$^{\circ}$F, under 3-25 bar pressure reacts with methane in the presence of a catalyst to produce hydrogen.
 
@@ -31,7 +34,13 @@ CO + H_2O \rightarrow CO_2 + H_2, \Delta H^{\circ}_{R, 298K} = -41.2 kJ/mol
 .
 \cite{kyriakou_electrochemical_2020}
 
+https://www.nap.edu/read/10922/chapter/10#93
+
 \section{Iodine-Sulfur Thermochemical Splitting}
+
+https://art.inl.gov/NGNP/Subcontractors%20Documents/General%20Atomics/Sulfur%20Iodine%20Process%20Summary%20for%20the%20Hydrogen%20Technology%20Down-Selection.pdf
+
+https://core.ac.uk/download/pdf/37987793.pdf
 
 https://art.inl.gov/NGNP/Subcontractors%20Documents/General%20Atomics/Sulfur%20Iodine%20Process%20Summary%20for%20the%20Hydrogen%20Technology%20Down-Selection.pdf
 
@@ -67,6 +76,9 @@ Hydrogen production with nuclear energy may increase the plant revenue \cite{otg
 
 Fuelcell Energy.
 NEL
+
+https://www.hydrogen.energy.gov/pdfs/review19/ta019_ghezel-ayagh_2019_o.pdf
+https://www.hydrogen.energy.gov/pdfs/review19/p148B_boardman_2019_p.pdf
 
 \section{Hydrogen Storage}
 There are three basic storage methods \cite{carriveau_hydrogen_2016}:
