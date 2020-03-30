@@ -18,23 +18,21 @@
 \begin{tikzpicture}[node distance=3cm,
     every node/.style={fill=white, font=\sffamily}, align=center]
   % Specification of nodes (position, etc.)
-  
+
   \node (reactor)	[process] {Reactor\\P$_{th}$};
   \node (steam1)	[process, right of=reactor, xshift=2.cm] {Steam-to-electricity\\conversion};
   \node (steam2)	[process, below of=reactor, yshift=1.cm, xshift=3.5cm] {Steam\\production};
 
   \node (elect)		[process, right of=steam1, xshift=2.cm] {Electricity\\P$_e$};
   \node (hte)		[process, right of=elect, xshift=1.5cm] {HTE};
-  \node (steam3)	[process, below of=elect, yshift=1.cm] {Temperature\\boosting};
 
   \draw[->]			(reactor) -- (steam1) node[midway] {$\gamma$P$_{th}$};
   \draw[->]			(reactor) ++(0.,-0.5)-- ++(0.,-0.5)-- node[midway] {(1-$\gamma$)P$_{th}$} ++(3.5,0.)-- ++(0.,-.5);
   \draw[->]			(steam1) -- (elect) node[midway] {$\eta\gamma$P$_{th}$};
-  \draw[->]			(elect) -- (hte) node[midway] {$\alpha\eta\gamma$P$_{th}$};
-  \draw[->]			(elect) -- (steam3) node[midway] {$(1-\alpha)\eta\gamma$P$_{th}$};
+  \draw[->]			(elect) -- (hte) node[midway] {$\eta\gamma$P$_{th}$};
+
   \draw[->]			(steam2) ++(-4.5,0)-- node[midway] {Room T water} ++(3.25,0);
-  \draw[->]			(steam2) -- (steam3) node[midway] {Reactor outlet T.};
-  \draw[->]			(steam3) ++(1.25,0)-- node[midway] {600-1000$^{\circ}$C} ++(3.25,0)-- ++(0,1.5);
+  \draw[->]			(steam2) ++(1.25,0)-- node[midway] {Reactor outlet T = 600-900$^{\circ}$C}++(9.75,0)-- ++(0,1.5);
 
   \end{tikzpicture}
 \end{document}
