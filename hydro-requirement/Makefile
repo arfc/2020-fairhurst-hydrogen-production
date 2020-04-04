@@ -1,4 +1,4 @@
-manuscript = main
+manuscript = SI2
 references = $(wildcard *.bib)
 latexopt   = -halt-on-error -file-line-error
 
