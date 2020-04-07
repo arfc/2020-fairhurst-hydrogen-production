@@ -1,4 +1,4 @@
-manuscript = hte1
+manuscript = lte
 references = $(wildcard *.bib)
 latexopt   = -halt-on-error -file-line-error
 
