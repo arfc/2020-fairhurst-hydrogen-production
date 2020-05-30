@@ -1,4 +1,5 @@
 import numpy as np
+import sys
 
 
 def efficiency(th):
@@ -192,7 +193,7 @@ def hte2_prod_rate(Pt, p, To, Te):
     return pr, pth, gamma
 
 
-def si_prod_rate(P, outT):
+def si_prod_rate(P, To):
     """
     Sulfur-Iodine energy requirements and production rate.
     Values from 'Efficiency of hydrogen production systems using alternative
@@ -200,21 +201,26 @@ def si_prod_rate(P, outT):
     Parameters:
     -----------
     P: thermal power [MW]
-    outT: reactor outlet temperature [C]
+    To: reactor outlet temperature [C]
     Returns:
     --------
     pr: production rate [kg/h]
     pth: sepecific energy [kWh(th)/kg-H2]
     """
-    temp = [750, 800, 850, 900, 950, 1000]
-    sel = [600, 400, 300, 265, 245, 230]  # specfic energy [MJ/kg-H2]
-    se = 1e3/3600 * np.array(sel)  # [kWh/kg-H2]
-    pth = np.interp(0.97*outT, temp, se)
-    pr = P/pth*1e3
+    Ts = 0.97*To
+    if Ts >= 750:
+        temp = [750, 800, 850, 900, 950, 1000]
+        sel = [600, 400, 300, 265, 245, 230]  # specfic energy [MJ/kg-H2]
+        se = 1e3/3600 * np.array(sel)  # [kWh/kg-H2]
+        pth = np.interp(Ts, temp, se)
+        pr = P/pth*1e3
+    else:
+        print('Error Tout has to be above 773 C.')
+        sys.exit()
     return pr, pth
 
 
-def si2_power_req(eta, Tout, Ts):
+def si2_power_req(eta, To, Ts):
     """"
     Calculates energy requirements for S-I 2 case.
     Values from 'Efficiency of hydrogen production systems using alternative
@@ -222,7 +228,7 @@ def si2_power_req(eta, Tout, Ts):
     Parameters:
     -----------
     eta: thermal-to-electrical conversion efficiency
-    Tout: reactor outlet temperature [C]
+    To: reactor outlet temperature [C]
     Ts: SI process temperature [C]
     Returns:
     --------
@@ -230,23 +236,27 @@ def si2_power_req(eta, Tout, Ts):
     gamma: Pe/Pth
     """
     ef = 0.97
-    Tr = ef * Tout
+    Tr = ef * To
 
-    temp = [750, 800, 850, 900, 950, 1000]
-    sel = [600, 400, 300, 265, 245, 230]  # specfic energy [MJ/kg-H2]
-    se = 1e3/3600 * np.array(sel)  # [kWh/kg-H2]
+    if Ts >= 750:
+        temp = [750, 800, 850, 900, 950, 1000]
+        sel = [600, 400, 300, 265, 245, 230]  # specfic energy [MJ/kg-H2]
+        se = 1e3/3600 * np.array(sel)  # [kWh/kg-H2]
 
-    dHsi = np.interp(Ts, temp, se)
-    mdot = np.interp(Tr, temp, se)/delta_H(Tr, 170)
-    dHboost = mdot*delta_H(Ts, Tr)
-    dHboost = dHboost/(2*1.008*3.6)  # [kWh/kg-H2]
+        dHsi = np.interp(Ts, temp, se)
+        mdot = np.interp(Tr, temp, se)/delta_H(Tr, 170)
+        dHboost = mdot*delta_H(Ts, Tr)
+        dHboost = dHboost/(2*1.008*3.6)  # [kWh/kg-H2]
 
-    gammacPth = dHsi - dHboost
-    etef = 0.95  # electrical-to-thermal conversion efficiency
+        gammacPth = dHsi - dHboost
+        etef = 0.95  # electrical-to-thermal conversion efficiency
 
-    gammaPth = 1/eta*1/etef*dHboost
-    Pth = gammaPth + gammacPth
-    gamma = gammaPth/Pth
+        gammaPth = 1/eta*1/etef*dHboost
+        Pth = gammaPth + gammacPth
+        gamma = gammaPth/Pth
+    else:
+        print('Error Ts has to be above 750 C.')
+        sys.exit()
     return Pth, gamma
 
 
