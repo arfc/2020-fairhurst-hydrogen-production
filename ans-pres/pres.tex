@@ -1,0 +1,110 @@
+%\documentclass[11pt,handout]{beamer}
+\documentclass[9pt]{beamer}
+\usetheme[white]{Illinois}
+
+\title[]{Hydrogen Economy in Champaign-Urbana, IL}
+\subtitle[]{ANS Annual meeting 2020}
+\author[]{Roberto Fairhurst Agosta}
+\date[05.12.2020]{June 10, 2020}
+\institute[UIUC]{University of Illinois at Urbana-Champaign}
+
+%\usepackage{bbding}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{booktabs} % nice rules for tables
+\usepackage{microtype} % if using PDF
+\usepackage{bigints}
+\usepackage{minted}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows, decorations, shapes}
+\usetikzlibrary{shapes.geometric,arrows}
+\definecolor{illiniblue}{HTML}{B1C6E2}
+\tikzstyle{bblock} = [rectangle, draw, fill=illiniblue,
+text width=10em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{sbblock} = [rectangle, draw, fill=illiniblue,
+text width=7em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\newcommand{\units}[1] {\:\text{#1}}%
+\newcommand{\SN}{S$_N$}%{S$_\text{N}$}%{$S_N$}%
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\erfc}{erfc}
+\setbeamertemplate{bibliography item}[text]
+
+%%%% Acronym support
+\usepackage[acronym,toc]{glossaries}
+\include{acros}
+\makeglossaries
+
+%try to get rid of header on title page\dots
+\makeatletter
+\newenvironment{withoutheadline}{
+  \setbeamertemplate{headline}[default]
+  \def\beamer@entrycode{\vspace*{-\headheight}}
+}{}
+
+\makeatother
+\makeatother
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+    \rightline{\insertframenumber{} / \inserttotalframenumber\hspace*{1ex}}
+  }%
+  \vskip0pt%
+}
+\makeatletter
+
+\begin{document}
+\newcommand*{\alphabet}{ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}
+\newlength{\highlightheight}
+\newlength{\highlightdepth}
+\newlength{\highlightmargin}
+\setlength{\highlightmargin}{2pt}
+\settoheight{\highlightheight}{\alphabet}
+\settodepth{\highlightdepth}{\alphabet}
+\addtolength{\highlightheight}{\highlightmargin}
+\addtolength{\highlightdepth}{\highlightmargin}
+\addtolength{\highlightheight}{\highlightdepth}
+\newcommand*{\Highlight}{\rlap{\textcolor{HighlightBackground}{\rule[-\highlightdepth]{\linewidth}{\highlightheight}}}}
+
+\begin{withoutheadline}
+\frame{
+  \titlepage
+}
+\end{withoutheadline}
+
+%%--------------------------------%%
+\AtBeginSection[]{
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+}
+
+\section{Introduction}
+\input{introduction}
+
+\section{Hydrogen Production Methods}
+% \input{hydrogen}
+
+\section{Microreactors}
+% \input{microreactors}
+
+% \section{Future studies}
+% \input{hydrogen}
+
+% \section{Conclusion}
+% \input{conclusion}
+
+\begin{frame}[allowframebreaks]
+  \frametitle{References}
+  \bibliographystyle{plain}
+  {\footnotesize \bibliography{bibliography.bib} }
+\end{frame}
+
+\end{document}
