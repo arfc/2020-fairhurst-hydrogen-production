@@ -1,0 +1,49 @@
+\ProvidesPackage{beamercolorthemeIllinoisWhite}
+% Adapted from the default crane style
+
+\mode<presentation>
+
+\definecolor{EmphColor}{RGB}{153,1,0}
+\definecolor{HighlightBackground}{RGB}{255,255,0}
+\definecolor{KeywordColor}{RGB}{0,0,95}
+
+% Color definitions
+\definecolor{UIUCBlue}{RGB}{0,62,126}
+\definecolor{UIUCOrange}{RGB}{233,118,34}
+%\definecolor{UIUCBlue}{RGB}{96,111,178}
+%\definecolor{UIUCOrange}{RGB}{233,118,34}
+%\definecolor{UIUCBlue}{RGB}{19,31,51}
+%\definecolor{UIUCOrange}{RGB}{250,99,0}
+
+\setbeamercolor{item projected}{bg=UIUCBlue}
+\setbeamercolor{itemize item}{fg=UIUCBlue}
+\setbeamercolor{itemize subitem}{fg=UIUCOrange}
+\setbeamercolor{description item}{fg=UIUCBlue}
+\setbeamercolor{enumerate item}{fg=UIUCBlue}
+\setbeamercolor{enumerate subitem}{fg=UIUCOrange}
+
+\setbeamercolor{palette secondary}{fg=white,bg=UIUCBlue}
+\setbeamercolor{palette tertiary}{fg=UIUCBlue,bg=UIUCOrange}
+\setbeamercolor{palette quaternary}{fg=white,bg=UIUCBlue}
+
+\setbeamercolor{titlelike}{parent=palette secondary}
+
+% This green is just so that I can figure out when, if ever, this 
+% is used.  If it is a useful palette, it should be changed to something
+% else.  Let me know if you figure out what uses these.
+\setbeamercolor{block title}{parent=palette tertiary}
+\setbeamercolor{block title alerted}{use=alerted text,fg=green,bg=alerted text.fg}
+\setbeamercolor{block title example}{use=example text,fg=green,bg=example text.fg}
+
+% This ends up applying to most navigation-related things
+\setbeamercolor{sidebar}{bg=UIUCOrange}
+  
+\setbeamercolor{palette sidebar primary}{fg=white}
+\setbeamercolor{palette sidebar secondary}{fg=UIUCOrange}
+
+\setbeamercolor*{separation line}{bg=UIUCOrange}
+\setbeamercolor*{fine separation line}{bg=UIUCOrange}
+
+
+\mode
+<all>
