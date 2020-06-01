@@ -133,8 +133,9 @@ def hte_prod_rate(Pt, p, To):
         pth, gamma = hte_power_req(p, To)
         pr = Pt/pth*1e3
     else:
-        pth = 0
         pr = 0
+        pth = 0
+        gamma = 0
     return pr, pth, gamma
 
 
